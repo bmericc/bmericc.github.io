@@ -2,13 +2,14 @@
 <head> 
   <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
   <title>TB2BHR - Bahri Meriç CANLI</title>
-  <meta id="Viewport" name="viewport" width="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">    
+  <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1"> 
   <meta name="apple-itunes-app" content="app-id=760681887, affiliate-data=, app-argument=">
   <meta name="google-play-app" content="app-id=com.genel.kendim.bahri">
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-  <script src="/js/libs/jquery.smartbanner.js"></script>
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.3/jquery.mobile.min.css" />
   <link href="/css/libs/jquery.smartbanner.css" media="all" rel="stylesheet" type="text/css" />
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.3/jquery.mobile.min.js"></script>
+  <script src="/js/libs/jquery.smartbanner.js"></script>
   <script type="text/javascript">
 
     var _gaq = _gaq || [];
@@ -22,19 +23,6 @@
     })();
 
 
-    $(function(){
-      if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
-        var ww = ( $(window).width() < window.screen.width ) ? $(window).width() : window.screen.width; //get proper width
-        var mw = 500; // min width of site
-        var ratio =  ww / mw; //calculate ratio
-        if( ww < mw){ //smaller than minimum size
-         $('#Viewport').attr('content', 'initial-scale=' + ratio + ', maximum-scale=' + ratio + ', minimum-scale=' + ratio + ', user-scalable=yes, width=' + ww);
-        }else{ //regular size
-         $('#Viewport').attr('content', 'initial-scale=1.0, maximum-scale=2, minimum-scale=1.0, user-scalable=yes, width=' + ww);
-        }
-      }
-    });
-
     $(function() { 
       jQuery.smartbanner({
           title: 'Bahri Meriç Canlı', // What the title of the app should be in the banner (defaults to <title>)
@@ -46,13 +34,14 @@
           icon: 'https://lh6.ggpht.com/f7VCbSWuymoVXZqM8DJ2VsC84zmhMszJd_z7nb8abgeabUfcRG19uJk7BeZKs0nMa_s=w300', // The URL of the icon (defaults to <link>)
           iconGloss: 'false', // Force gloss effect for iOS even for precomposed (true or false)
           button: 'Yükle', // Text on the install button
-          scale: '1', //auto Scale based on viewport size (set to 1 to disable)
+          scale: 'auto', //auto Scale based on viewport size (set to 1 to disable)
           speedIn: '300', // 300 Show animation speed of the banner
           speedOut: '400', // 400 Close animation speed of the banner
           daysHidden: 0, // Duration to hide the banner after being closed (0 = always show banner)
           daysReminder: 0, // Duration to hide the banner after 'VIEW' is clicked (0 = always show banner)
+          
           force: null, // Choose 'ios' or 'android'. Don't do a browser check, just always show this banner
-          layer: true  // Display as overlay layer or slide down the page
+          layer: 'true',  // Display as overlay layer or slide down the page
       });            
     });
 
@@ -66,48 +55,54 @@
         background: #FFF;
         border: dotted 3px #efefef;
         padding: .85em 2em;
-        white-space: nowrap;
-	width: 450px;
+	      width: 500px;
+        line-height: 1.5;
       }
       th a { color: #999;  }
     --> 
   </style> 
 </head>
 <body>
-<table width="99%" height="92%">
-<tr>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-</tr>
-<tr>
-<td height="1%">&nbsp;</td>
-<th height="1%">
-<img src="http://www.gravatar.com/avatar/1ba198f7dbc5c41a452d9ff6fbe586bd?s=100" width="100px" height="100px" />
-<br/>
-<br/>
+<div data-role="page">
+  <div data-role="content">
 
-TB2BHR - Bahri Meriç CANLI
-<p style="text-align:left">Web developer, Mountaineer, Search & rescue team member, <br/>Ham radio operator</p>
+    <table width="99%" height="92%">
+    <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    </tr>
+    <tr>
+    <td height="1%">&nbsp;</td>
+    <th height="1%">
+    <img src="http://www.gravatar.com/avatar/1ba198f7dbc5c41a452d9ff6fbe586bd?s=100" width="100px" height="100px" />
+    <br/>
+    <br/>
 
-
-<ul style="text-align:left">
-<li><a href="http://www.bahri.info">Personal web site</a></li>
-<li><a href="http://www.bahricanli.com.tr">My projects site</a></li>
-<li><a href="http://bahri.org">Social & bussines card site</a></li>
-</ul>
+    TB2BHR - Bahri Meriç CANLI
+    <p style="text-align:left">Web developer, Linux Sys Admin, Mountaineer, Search & rescue team member, Ham radio operator, Motorcycle Driver, Entrepreneur</p>
 
 
+    <ul style="text-align:left">
+    <li><a href="http://www.bahri.info">Personal web site</a></li>
+    <li><a href="http://www.bahricanli.com.tr">My projects site</a></li>
+    <li><a href="http://bahri.org">Social & bussines card site</a></li>
+    </ul>
 
 
- </th>
-<td>&nbsp;</td>
-</tr>
-<tr>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-</tr>
-</table>
+
+
+     </th>
+    <td>&nbsp;</td>
+    </tr>
+    <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    </tr>
+    </table>
+
+  </div>
+</div>
 </body>
 </html>
