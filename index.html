@@ -35,23 +35,25 @@
       }
     });
 
-    jQuery.smartbanner({
-        title: 'Bahri Meriç Canlı', // What the title of the app should be in the banner (defaults to <title>)
-        author: 'Uygulamam.com', // What the author of the app should be in the banner (defaults to <meta name='author'> or hostname)
-        price: 'Free', // Price of the app
-        appStoreLanguage: 'TR', // us Language code for App Store
-        inAppStore: 'On the App Store', // On the App Store - Text of price for iOS
-        inGooglePlay: 'In Google Play', // In Google Play - Text of price for Android
-        icon: 'https://lh6.ggpht.com/f7VCbSWuymoVXZqM8DJ2VsC84zmhMszJd_z7nb8abgeabUfcRG19uJk7BeZKs0nMa_s=w300', // The URL of the icon (defaults to <link>)
-        iconGloss: 'false', // Force gloss effect for iOS even for precomposed (true or false)
-        button: 'Yükle', // Text on the install button
-        scale: '1', //auto Scale based on viewport size (set to 1 to disable)
-        speedIn: '300', // 300 Show animation speed of the banner
-        speedOut: '400', // 400 Close animation speed of the banner
-        daysHidden: 0, // Duration to hide the banner after being closed (0 = always show banner)
-        daysReminder: 0, // Duration to hide the banner after 'VIEW' is clicked (0 = always show banner)
-        force: null // Choose 'ios' or 'android'. Don't do a browser check, just always show this banner
-    });            
+    $(function() { 
+      jQuery.smartbanner({
+          title: 'Bahri Meriç Canlı', // What the title of the app should be in the banner (defaults to <title>)
+          author: 'Uygulamam.com', // What the author of the app should be in the banner (defaults to <meta name='author'> or hostname)
+          price: 'Free', // Price of the app
+          appStoreLanguage: 'TR', // us Language code for App Store
+          inAppStore: 'On the App Store', // On the App Store - Text of price for iOS
+          inGooglePlay: 'In Google Play', // In Google Play - Text of price for Android
+          icon: 'https://lh6.ggpht.com/f7VCbSWuymoVXZqM8DJ2VsC84zmhMszJd_z7nb8abgeabUfcRG19uJk7BeZKs0nMa_s=w300', // The URL of the icon (defaults to <link>)
+          iconGloss: 'false', // Force gloss effect for iOS even for precomposed (true or false)
+          button: 'Yükle', // Text on the install button
+          scale: '1', //auto Scale based on viewport size (set to 1 to disable)
+          speedIn: '300', // 300 Show animation speed of the banner
+          speedOut: '400', // 400 Close animation speed of the banner
+          daysHidden: 0, // Duration to hide the banner after being closed (0 = always show banner)
+          daysReminder: 0, // Duration to hide the banner after 'VIEW' is clicked (0 = always show banner)
+          force: null // Choose 'ios' or 'android'. Don't do a browser check, just always show this banner
+      });            
+    });
 
   </script>
   <style type="text/css"><!--
