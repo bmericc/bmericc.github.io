@@ -21,17 +21,19 @@
   </script>
   <style type="text/css"><!--
 
-      th {
+      #text-content {
         font-family: arial, verdena, sans-serif;
         color: #999;
         text-align: center;
         background: #FFF;
         border: dotted 3px #efefef;
         padding: .85em 2em;
-	      width: 500px;
+	      max-width: 500px;
+        width: %100;
         line-height: 1.5;
+        margin: 0 auto;
       }
-      th a { color: #999;  }
+      #text-content a { color: #999;  }
 
       .tags {
         display: inline-block;
@@ -46,15 +48,7 @@
 <div data-role="page">
   <div data-role="content">
 
-    <table width="99%" height="92%">
-    <tr>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    </tr>
-    <tr>
-    <td height="1%">&nbsp;</td>
-    <th height="1%">
+    <div id="text-content">
     <img src="http://www.gravatar.com/avatar/1ba198f7dbc5c41a452d9ff6fbe586bd?s=150" width="150px" height="150px" />
     <br/>
 
@@ -78,15 +72,7 @@
     </ul>
    
 
-     </th>
-    <td>&nbsp;</td>
-    </tr>
-    <tr>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    </tr>
-    </table>
+     </div>
 
   </div>
 </div>
