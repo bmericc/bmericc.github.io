@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.3/jquery.mobile.min.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.3/jquery.mobile.min.js"></script>
+  <script src="js/script.js"></script>
   <script type="text/javascript">
 
     var _gaq = _gaq || [];
@@ -35,6 +36,10 @@
       }
       #text-content a { color: #999;  }
 
+      .bank-account {
+        font-size: 10pt;
+      }
+
       .tags {
         display: inline-block;
         line-height: 2;
@@ -46,7 +51,13 @@
   </style> 
 </head>
 <body>
-<div data-role="page">
+<div data-role="page" id="page1">
+
+  <div data-role="header" data-position="fixed" data-tap-toggle="false" data-update-page-padding="false" data-theme="b">
+    <a class="ui-nodisc-icon" href="javascript:togglePanel('sidebar-left');" data-role="button" data-icon="bars" data-iconpos="notext">Menü</a>
+     <h1 id="tabTimelineName">TB2BHR - Bahri Meriç CANLI</h1>
+  </div>
+
   <div data-role="content" style="padding: .50em !important;">
 
     <div id="text-content">
@@ -64,18 +75,246 @@
       <span class="tags ui-body-b">Motorcycle Driver</span>
       <span class="tags ui-body-b">Entrepreneur</span>
     </p> 
-
-
-    <ul class="ui-content ui-nodisc-icon" data-inset="true" data-role="listview" data-theme="b" data-icon="action">
-      <li><a href="http://www.bahri.info">Personal web site</a></li>
-      <li><a href="http://www.bahricanli.com.tr">My projects site</a></li>
-      <li><a href="http://bahri.org">Social & bussines card site</a></li>
-    </ul>
    
-
-     </div>
+    </div>
 
   </div>
+
+  <div data-role="panel" id="sidebar-left" data-position="left" data-display="push" data-theme="b">
+    <ul data-role="listview" class="ui-nodisc-icon">
+        <li data-icon="delete" data-theme="a"><a href="#" data-rel="close">Kapat</a></li>
+        <li data-icon="home"><a href="#page1" class="show-page-loading-msg">Ana Sayfa</a></li>
+        <li data-icon="user"><a href="#page2" class="show-page-loading-msg">Özgeçmiş</a></li>
+        <li data-icon="shop"><a href="#page3" class="show-page-loading-msg">Banka Hesapları</a></li>
+        <li data-icon="info"><a href="#page4" class="show-page-loading-msg">İletişim</a></li>
+    </ul>
+  </div>
+
 </div>
+
+
+<div data-role="page" id="page2">
+
+  <div data-role="header" data-position="fixed" data-tap-toggle="false" data-update-page-padding="false" data-theme="b">
+    <a class="ui-nodisc-icon" href="javascript:togglePanel('sidebar-left');" data-role="button" data-icon="bars" data-iconpos="notext">Menü</a>
+     <h1 id="tabTimelineName">Özgeçmiş</h1>
+  </div>
+
+  <div data-role="content" style="padding: .50em !important;">
+
+    <div id="text-content" style="text-align: justify;">
+   
+   2005 yılı Aralık ayından beri çeşitli web projelerinde geliştirici ve sistem yöneticisi olarak görev aldım. Ayrıca kullanım alışkanlıklarının mobile kayması sebebi ile mobil uygulama geliştirme üzerine çeşitli çalışmalar yapmaktayım. Kişisel olarak internet radyosu işletmekteyim. Çeşitli içerik bazlı web sitelerim de bulunmakta. Dağcılık ve fitnes ile uğraşmakta, AKUT Arama ve Kurtarma Derneği'de gönüllü olarak çalışmaktayım.
+
+    </div>
+
+  </div>
+
+  <div data-role="panel" id="sidebar-left" data-position="left" data-display="push" data-theme="b">
+    <ul data-role="listview" class="ui-nodisc-icon">
+        <li data-icon="delete" data-theme="a"><a href="#" data-rel="close">Kapat</a></li>
+        <li data-icon="home"><a href="#page1" class="show-page-loading-msg">Ana Sayfa</a></li>
+        <li data-icon="user"><a href="#page2" class="show-page-loading-msg">Özgeçmiş</a></li>
+        <li data-icon="shop"><a href="#page3" class="show-page-loading-msg">Banka Hesapları</a></li>
+        <li data-icon="info"><a href="#page4" class="show-page-loading-msg">İletişim</a></li>
+    </ul>
+  </div>
+
+</div>
+
+<div data-role="page" id="page3">
+
+  <div data-role="header" data-position="fixed" data-tap-toggle="false" data-update-page-padding="false" data-theme="b">
+    <a class="ui-nodisc-icon" href="javascript:togglePanel('sidebar-left');" data-role="button" data-icon="bars" data-iconpos="notext">Menü</a>
+     <h1 id="tabTimelineName">Banka Hesap Numaraları</h1>
+  </div>
+
+  <div data-role="content" style="padding: .50em !important;">
+
+    <div id="text-content">
+   
+
+      <table width="75%" border="0" class="bank-account">
+      <tr>
+        <td><img src="images/isbank_logo.gif" width="140" height="39"></td>
+      </tr>
+      <tr>
+        <td><strong>T&uuml;rkiye &#304;&#351; Bankas&#305; (Bahri Meri&ccedil; CANLI ad&#305;na)</strong></td>
+      </tr>
+      <tr>
+        <td>&#350;ube Kodu: 4213 (Me&#351;rutiyet/Ankara)</td>
+      </tr>
+      <tr>
+        <td>Hesap No: 0840367</td>
+      </tr>
+      <tr>
+        <td>Iban No: TR060006400000142130840367</td>
+      </tr>
+      </table>
+      
+      <br/>
+
+      <table width="75%" border="0" class="bank-account">
+      <tr>
+        <td><img src="images/garanti_logo.gif" ></td>
+      </tr>
+      <tr>
+        <td><strong>T&uuml;rkiye Garanti Bankas&#305; (Bahri Meri&ccedil; CANLI ad&#305;na)</strong></td>
+      </tr>
+      <tr>
+        <td>&#350;ube Kodu: 528 (Me&#351;rutiyet Caddesi/Ankara)</td>
+      </tr>
+      <tr>
+        <td>Hesap No: 6696399</td>
+      </tr>
+      <tr>
+        <td>Iban No: TR710006200052800006696399</td>
+      </tr>
+      </table>
+
+      <br/>
+      
+      <table width="75%" border="0" class="bank-account">
+      <tr>
+        <td><img src="images/vbank.gif" ></td>
+      </tr>
+      <tr>
+        <td><strong>Vakıf Bank (Bahri Meri&ccedil; CANLI ad&#305;na)</strong></td>
+      </tr>
+      <tr>
+        <td>&#350;ube Kodu: 100 (Me&#351;rutiyet/Ankara)</td>
+      </tr>
+      <tr>
+        <td>Hesap No: 00158007297088619</td>
+      </tr>
+      <tr>
+        <td>Iban No: TR360001500158007297088619</td>
+      </tr>
+      </table>
+
+      <br/>
+      
+      <table width="75%" border="0" class="bank-account">
+      <tr>
+        <td><img src="images/turkiyefinans.gif" ></td>
+      </tr>
+      <tr>
+        <td><strong>Türkiye Finans Katılım Bankası (Bahri Meri&ccedil; CANLI ad&#305;na)</strong></td>
+      </tr>
+      <tr>
+        <td>Şube: Ankara/Ulus</td>
+      </tr>
+      <tr>
+        <td>Hesap No: 120791-2</td>
+      </tr>
+      <tr>
+        <td>Iban No: TR430020600007001207910002</td>
+      </tr>
+      </table>
+      
+      <br/>
+
+      <table width="75%" border="0" class="bank-account">
+      <tr>
+        <td><img src="images/pttbank_logo.jpg" ></td>
+      </tr>
+      <tr>
+        <td><strong>PTT Bank (Bahri Meri&ccedil; CANLI ad&#305;na)</strong></td>
+      </tr>
+      <tr>
+        <td>Hesap No: 5689877</td>
+      </tr>
+      </table>
+   
+    </div>
+
+  </div>
+
+  <div data-role="panel" id="sidebar-left" data-position="left" data-display="push" data-theme="b">
+    <ul data-role="listview" class="ui-nodisc-icon">
+        <li data-icon="delete" data-theme="a"><a href="#" data-rel="close">Kapat</a></li>
+        <li data-icon="home"><a href="#page1" class="show-page-loading-msg">Ana Sayfa</a></li>
+        <li data-icon="user"><a href="#page2" class="show-page-loading-msg">Özgeçmiş</a></li>
+        <li data-icon="shop"><a href="#page3" class="show-page-loading-msg">Banka Hesapları</a></li>
+        <li data-icon="info"><a href="#page4" class="show-page-loading-msg">İletişim</a></li>
+    </ul>
+  </div>
+
+</div>
+
+
+<div data-role="page" id="page4">
+
+  <div data-role="header" data-position="fixed" data-tap-toggle="false" data-update-page-padding="false" data-theme="b">
+    <a class="ui-nodisc-icon" href="javascript:togglePanel('sidebar-left');" data-role="button" data-icon="bars" data-iconpos="notext">Menü</a>
+     <h1 id="tabTimelineName">İletişim</h1>
+  </div>
+
+  <div data-role="content" style="padding: .50em !important;">
+
+    <div id="text-content">
+   
+<h3 id="contactInfo">İletişim Bilgileri</h3>
+<ul id="contactContent" data-icon="false" data-theme="a" data-inset="true" data-role="listview" class="ui-listview ui-listview-inset ui-corner-all ui-shadow ui-group-theme-a">
+<li id="newlabel-phone" data-role="list-divider" role="heading" class="ui-li-divider ui-bar-a ui-first-child">Telefon</li>         <li class="ellipsistext"><a id="phone" href="javascript:call('0505 3127806')" class="ui-btn">0505 3127806</a></li>                                 <li id="newlabel-email" data-role="list-divider" role="heading" class="ui-li-divider ui-bar-a">E-Posta</li>             <li class="ellipsistext"><a id="email" href="javascript:email('bahri@bahri.info')" class="ui-btn">bahri@bahri.info</a></li>                             <li id="newlabel-website" data-role="list-divider" role="heading" class="ui-li-divider ui-bar-a">Web</li>                 <li class="ellipsistext ui-last-child"><a id="website" href="javascript:openBrowser('web', 'http://www.bahri.info')" class="ui-btn">www.bahri.info</a></li></ul>
+<h3 id="socialnetworksInfo">Sosyal Ağlar</h3>
+  <div id="socialnetworks" class="ui-grid-a"> 
+    
+<div class="ui-block-a">
+  <a class="show-page-loading-msg ui-nodisc-icon align-left ui-link ui-btn ui-btn-a ui-icon-facebook ui-btn-icon-left ui-shadow ui-corner-all" data-iconpos="left" data-icon="facebook" data-role="button" href="javascript:mySocial('web', 'http://www.facebook.com/bahricanli');" data-theme="a" role="button">Facebook</a>
+</div>
+<div class="ui-block-b">
+  <a class="show-page-loading-msg ui-nodisc-icon align-left ui-link ui-btn ui-btn-a ui-icon-twitter ui-btn-icon-left ui-shadow ui-corner-all" data-iconpos="left" data-icon="twitter" data-role="button" href="javascript:mySocial('web', 'http://www.twitter.com/bmericc');" data-theme="a" role="button">Twitter</a>
+</div>
+<div class="ui-block-a">
+  <a class="show-page-loading-msg ui-nodisc-icon align-left ui-link ui-btn ui-btn-a ui-icon-foursquare ui-btn-icon-left ui-shadow ui-corner-all" data-iconpos="left" data-icon="foursquare" data-role="button" href="javascript:mySocial('web', 'http://www.foursquare.com/user/790878');" data-theme="a" role="button">Foursquare</a>
+</div>
+<div class="ui-block-b">
+  <a class="show-page-loading-msg ui-nodisc-icon align-left ui-link ui-btn ui-btn-a ui-icon-instagram ui-btn-icon-left ui-shadow ui-corner-all" data-iconpos="left" data-icon="instagram" data-role="button" href="javascript:mySocial('web', 'http://www.instagram.com/bmericc');" data-theme="a" role="button">instagram</a>
+</div>
+<div class="ui-block-a">
+  <a class="show-page-loading-msg ui-nodisc-icon align-left ui-link ui-btn ui-btn-a ui-icon-youtube ui-btn-icon-left ui-shadow ui-corner-all" data-iconpos="left" data-icon="youtube" data-role="button" href="javascript:mySocial('web', 'http://www.youtube.com/bmericc');" data-theme="a" role="button">Youtube</a>
+</div>
+<div class="ui-block-b">
+  <a class="show-page-loading-msg ui-nodisc-icon align-left ui-link ui-btn ui-btn-a ui-icon-lastfm ui-btn-icon-left ui-shadow ui-corner-all" data-iconpos="left" data-icon="lastfm" data-role="button" href="javascript:mySocial('web', 'http://www.lastfm.com/bmericc');" data-theme="a" role="button">Lastfm</a>
+</div>
+<div class="ui-block-a">
+  <a class="show-page-loading-msg ui-nodisc-icon align-left ui-link ui-btn ui-btn-a ui-icon-googleplus ui-btn-icon-left ui-shadow ui-corner-all" data-iconpos="left" data-icon="googleplus" data-role="button" href="javascript:mySocial('web', 'http://plus.google.com/109476428714436635646');" data-theme="a" role="button">Googleplus</a>
+</div>
+<div class="ui-block-b">
+  <a class="show-page-loading-msg ui-nodisc-icon align-left ui-link ui-btn ui-btn-a ui-icon-linkedin ui-btn-icon-left ui-shadow ui-corner-all" data-iconpos="left" data-icon="linkedin" data-role="button" href="javascript:mySocial('web', 'http://www.linkedin.com/in/bmericc');" data-theme="a" role="button">Linkedin</a>
+</div>
+<div class="ui-block-a">
+  <a class="show-page-loading-msg ui-nodisc-icon align-left ui-link ui-btn ui-btn-a ui-icon-pinterest ui-btn-icon-left ui-shadow ui-corner-all" data-iconpos="left" data-icon="pinterest" data-role="button" href="javascript:mySocial('web', 'http://www.pinterest.com/bmericc');" data-theme="a" role="button">Pinterest</a>
+</div>
+<div class="ui-block-b">
+  <a class="show-page-loading-msg ui-nodisc-icon align-left ui-link ui-btn ui-btn-a ui-icon-delicious ui-btn-icon-left ui-shadow ui-corner-all" data-iconpos="left" data-icon="delicious" data-role="button" href="javascript:mySocial('web', 'http://www.delicious.com/bmericc');" data-theme="a" role="button">Delicious</a>
+</div>
+<div class="ui-block-a">
+  <a class="show-page-loading-msg ui-nodisc-icon align-left ui-link ui-btn ui-btn-a ui-icon-picasa ui-btn-icon-left ui-shadow ui-corner-all" data-iconpos="left" data-icon="picasa" data-role="button" href="javascript:mySocial('web', 'http://www.picasa.com/109476428714436635646');" data-theme="a" role="button">Picasa</a>
+</div>
+<div class="ui-block-b">
+  <a class="show-page-loading-msg ui-nodisc-icon align-left ui-link ui-btn ui-btn-a ui-icon-vimeo ui-btn-icon-left ui-shadow ui-corner-all" data-iconpos="left" data-icon="vimeo" data-role="button" href="javascript:mySocial('web', 'http://www.vimeo.com/bmericc');" data-theme="a" role="button">Vimeo</a>
+</div>
+  </div>  
+
+
+   
+    </div>
+
+  </div>
+
+  <div data-role="panel" id="sidebar-left" data-position="left" data-display="push" data-theme="b">
+     <ul data-role="listview" class="ui-nodisc-icon">
+        <li data-icon="delete" data-theme="a"><a href="#" data-rel="close">Kapat</a></li>
+        <li data-icon="home"><a href="#page1" class="show-page-loading-msg">Ana Sayfa</a></li>
+        <li data-icon="user"><a href="#page2" class="show-page-loading-msg">Özgeçmiş</a></li>
+        <li data-icon="shop"><a href="#page3" class="show-page-loading-msg">Banka Hesapları</a></li>
+        <li data-icon="info"><a href="#page4" class="show-page-loading-msg">İletişim</a></li>
+    </ul>
+  </div>
+
+</div>
+
 </body>
 </html>
