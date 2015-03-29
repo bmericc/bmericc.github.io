@@ -93,11 +93,12 @@
 
   <div data-role="panel" id="sidebar-left" data-position="left" data-display="push" data-theme="b">
     <div class="ui-panel-inner">
-        <img src="/images/logo.png" alt="Bahri.Info" height="50" style="margin-bottom:10px; margin-left: 30px;" />
+        <img src="/images/logo.png" alt="Bahri.Info" height="50" style="margin-bottom:20px; margin-left: 30px;" />
         <ul data-role="listview" class="ui-nodisc-icon" data-inset="false">
             <li class="iconLeft" data-icon="home"><a href="#page1" class="show-page-loading-msg">Ana Sayfa</a></li>
             <li class="iconLeft" data-icon="user"><a href="#page2" class="show-page-loading-msg">Özgeçmiş</a></li>
             <li class="iconLeft" data-icon="shop"><a href="#page3" class="show-page-loading-msg">Ödeme Bilgileri</a></li>
+            <li class="iconLeft" data-icon="info"><a href="#page4" class="show-page-loading-msg">İletişim</a></li>
         </ul>
     </div>    
   </div>
@@ -124,11 +125,12 @@
 
    <div data-role="panel" id="sidebar-left" data-position="left" data-display="push" data-theme="b">
     <div class="ui-panel-inner">
-        <img src="/images/logo.png" alt="Bahri.Info" height="50" style="margin-bottom:10px; margin-left: 30px;" />
+        <img src="/images/logo.png" alt="Bahri.Info" height="50" style="margin-bottom:20px; margin-left: 30px;" />
            <ul data-role="listview" class="ui-nodisc-icon" data-inset="false">
             <li class="iconLeft" data-icon="home"><a href="#page1" class="show-page-loading-msg">Ana Sayfa</a></li>
             <li class="iconLeft" data-icon="user"><a href="#page2" class="show-page-loading-msg">Özgeçmiş</a></li>
             <li class="iconLeft" data-icon="shop"><a href="#page3" class="show-page-loading-msg">Ödeme Bilgileri</a></li>
+             <li class="iconLeft" data-icon="info"><a href="#page4" class="show-page-loading-msg">İletişim</a></li>
         </ul>
     </div>    
   </div>
@@ -245,11 +247,12 @@
 
     <div data-role="panel" id="sidebar-left" data-position="left" data-display="push" data-theme="b">
     <div class="ui-panel-inner">
-        <img src="/images/logo.png" alt="Bahri.Info" height="50" style="margin-bottom:10px; margin-left: 30px;" />
+        <img src="/images/logo.png" alt="Bahri.Info" height="50" style="margin-bottom:20px; margin-left: 30px;" />
            <ul data-role="listview" class="ui-nodisc-icon" data-inset="false">
             <li class="iconLeft" data-icon="home"><a href="#page1" class="show-page-loading-msg">Ana Sayfa</a></li>
             <li class="iconLeft" data-icon="user"><a href="#page2" class="show-page-loading-msg">Özgeçmiş</a></li>
             <li class="iconLeft" data-icon="shop"><a href="#page3" class="show-page-loading-msg">Ödeme Bilgileri</a></li>
+             <li class="iconLeft" data-icon="info"><a href="#page4" class="show-page-loading-msg">İletişim</a></li>
         </ul>
     </div>    
   </div>
@@ -258,7 +261,68 @@
 
 </div>
 
+<div data-role="page" id="page4">
 
+  <div data-role="header" data-position="fixed" data-tap-toggle="false" data-update-page-padding="false" data-theme="b">
+    <a class="ui-nodisc-icon" href="javascript:togglePanel('sidebar-left');" data-role="button" data-icon="bars" data-iconpos="notext">Menü</a>
+     <h1 id="tabTimelineName">İletişim</h1>
+  </div>
+
+  <div data-role="content" style="padding: .50em !important;">
+
+    <div id="text-content" style="text-align: justify;">
+   
+
+            <h3>İletişim Bilgileri</h3>
+      <div class="ui-btn-icon-notext ui-icon-location" style="position: absolute; float: left;"></div>
+      <p style="color: #403e3e; padding-left: 35px;">Bahri Meriç Canlı<br>PK 10 Ulus, 06040<br>Ankara, Turkey</p>
+      <div class="ui-btn-icon-notext ui-icon-phone" style="position: absolute; float: left;"></div>
+      <p style="color: #403e3e; padding-left: 35px;">+90 (543) 415 54 40<br>+1 (302) 365 09 28</p>
+      <div class="ui-btn-icon-notext ui-icon-mail" style="position: absolute; float: left;"></div>
+      <p style="color: #403e3e; padding-left: 35px;">bahri@bahri.info</p>
+      
+
+      
+      <hr style="background: #bebebe; margin: 15px 0px;">
+      <h3>İletişim Formu</h3>
+      <form method="post" name="contactus" id="contact-us">
+
+        <label for="contact-email">Ad soyad:</label>
+        <input type="text" value="" id="contact-name" name="name">
+
+        <label for="contact-email">Email:</label>
+        <input type="email" value="" id="contact-email" name="email">
+       
+
+        <label for="contact-message">Mesaj:</label>
+        <textarea id="contact-message" name="message" rows="8" cols="40" class="ui-input-text ui-shadow-inset ui-body-inherit ui-corner-all ui-textinput-autogrow" style="height: 48px;"></textarea>
+
+
+        <label for="contact-code">Using only numbers, what is 8 + 5 ?</label>
+        
+        <input type="text" value="" id="contact-code" name="code">
+      
+        <input type="submit" name="send" id="send" value="Gönder">
+      </form>
+      
+    </div>
+
+
+  </div>
+
+   <div data-role="panel" id="sidebar-left" data-position="left" data-display="push" data-theme="b">
+    <div class="ui-panel-inner">
+        <img src="/images/logo.png" alt="Bahri.Info" height="50" style="margin-bottom:20px; margin-left: 30px;" />
+           <ul data-role="listview" class="ui-nodisc-icon" data-inset="false">
+            <li class="iconLeft" data-icon="home"><a href="#page1" class="show-page-loading-msg">Ana Sayfa</a></li>
+            <li class="iconLeft" data-icon="user"><a href="#page2" class="show-page-loading-msg">Özgeçmiş</a></li>
+            <li class="iconLeft" data-icon="shop"><a href="#page3" class="show-page-loading-msg">Ödeme Bilgileri</a></li>
+             <li class="iconLeft" data-icon="info"><a href="#page4" class="show-page-loading-msg">İletişim</a></li>
+        </ul>
+    </div>    
+  </div>
+
+</div>
 
 </body>
 </html>
