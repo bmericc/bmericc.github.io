@@ -59,7 +59,7 @@ function contactus() {
         success: function (result) {
             if(result.status) {
                 if($("#formAlert").length == 0){
-                    $('#contactusForm').html("<p id='formAlert'>Mesajınız iletildi. <br/>İlginiz için teşekkür ederim</p>");     
+                    $('#contactusForm').prepend("<p id='formAlert'>Mesajınız iletildi. <br/>İlginiz için teşekkür ederim</p>");     
                     $("#formAlert").delay(1000).hide();      
                 }    
                 else {
