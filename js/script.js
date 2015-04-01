@@ -63,6 +63,7 @@ function contactus() {
                     $("#formAlert").delay(1000).hide();      
                 }    
                 else {
+                    $("#formAlert").show();
                     $('#formAlert').html("Mesajınız iletildi. <br/>İlginiz için teşekkür ederim");
                     $("#formAlert").delay(1000).hide();      
                 }                
@@ -72,6 +73,7 @@ function contactus() {
                     $("#formAlert").delay(1000).hide();      
                 }
                 else {
+                    $("#formAlert").show();
                     $('#formAlert').html(result.message);
                     $("#formAlert").delay(1000).hide();      
                 }
@@ -83,6 +85,7 @@ function contactus() {
                 $("#formAlert").delay(1000).hide();      
             }
             else {
+                $("#formAlert").show();
                 $('#formAlert').html("Network error has occurred please try again!");
                 $("#formAlert").delay(1000).hide();      
             }
