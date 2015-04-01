@@ -45,9 +45,27 @@ $( window ).on( "resize", function(){
 
 function contactus() {
 
-    var contactusForm = $('#contactusForm').serialize();
-    console.log(contactusForm);
-
-    $('#contactusForm').html("Mesajınız iletildi. <br/>İlginiz için teşekkür ederim");
+     $.ajax({url: 'https://secure.prj.be/contactus/',
+        data: { outputType:'json', form : $('#contactusForm').serialize()},
+        type: 'post',                   
+        async: 'true',
+        dataType: 'json',
+        beforeSend: function() {
+             $.mobile.loading( "show" ); // This will show ajax spinner
+        },
+        complete: function() {
+             $.mobile.loading( "hide" ); // This will hide ajax spinner
+        },
+        success: function (result) {
+            if(result.status) {
+                $('#contactusForm').html("<p>Mesajınız iletildi. <br/>İlginiz için teşekkür ederim</p>");           
+            } else {                               
+                $('#contactusForm').prepend(result.message); 
+            }
+        },
+        error: function (request,error) {              
+            $('#contactusForm').prepend('<p>Network error has occurred please try again!</p>');
+        }
+    });                   
 
 }
