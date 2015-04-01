@@ -47,9 +47,10 @@ function contactus() {
 
      $.ajax({url: 'https://secure.prj.be/contactus/',
         data: { outputType:'json', form : $('#contactusForm').serialize()},
-        type: 'post',                   
+        type: 'get',                   
         async: 'true',
         dataType:"json",
+        contentType: "application/json",
         beforeSend: function() {
              $.mobile.loading( "show" ); // This will show ajax spinner
         },
