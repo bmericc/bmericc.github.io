@@ -48,6 +48,6 @@ function contactus() {
     var contactusForm = $('#contactusForm').serialize();
     console.log(contactusForm);
 
-    $('#contactusForm').html("");
+    $('#contactusForm').html("Mesajınız iletildi. <br/>İlginiz için teşekkür ederim");
 
 }
