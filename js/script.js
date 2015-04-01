@@ -59,26 +59,32 @@ function contactus() {
         success: function (result) {
             if(result.status) {
                 if($("#formAlert").length == 0){
-                    $('#contactusForm').html("<p id='formAlert'>Mesajınız iletildi. <br/>İlginiz için teşekkür ederim</p>");           
+                    $('#contactusForm').html("<p id='formAlert'>Mesajınız iletildi. <br/>İlginiz için teşekkür ederim</p>");     
+                    $("#formAlert").delay(1000).hide();      
                 }    
                 else {
                     $('#formAlert').html("Mesajınız iletildi. <br/>İlginiz için teşekkür ederim");
+                    $("#formAlert").delay(1000).hide();      
                 }                
             } else {                            
                 if($("#formAlert").length == 0){   
                     $('#contactusForm').prepend("<p id='formAlert'>"+result.message+"</p>"); 
+                    $("#formAlert").delay(1000).hide();      
                 }
                 else {
                     $('#formAlert').html(result.message);
+                    $("#formAlert").delay(1000).hide();      
                 }
             }
         },
         error: function (request,error) {          
             if($("#formAlert").length == 0){       
                 $('#contactusForm').prepend("<p id='formAlert'>Sunucu ile iletişim hatası oluştu. Lütfen daha sonra tekrar deneyin!</p>");
+                $("#formAlert").delay(1000).hide();      
             }
             else {
                 $('#formAlert').html("Network error has occurred please try again!");
+                $("#formAlert").delay(1000).hide();      
             }
         }
     });                   
