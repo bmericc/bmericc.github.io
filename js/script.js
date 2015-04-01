@@ -62,28 +62,28 @@ function contactus() {
                 if($("#formAlert").length == 0){
                     $('#contactusForm').prepend("<p id='formAlert'>Mesajınız iletildi. <br/>İlginiz için teşekkür ederim</p>");                         
                     setTimeout(function() {
-                      $("#formAlert").hide();      
+                      $("#formAlert").hide("slow");      
                     }, 5000);
                 }    
                 else {
                     $("#formAlert").show();
                     $('#formAlert').html("Mesajınız iletildi. <br/>İlginiz için teşekkür ederim");
                     setTimeout(function() {
-                      $("#formAlert").hide();      
+                      $("#formAlert").hide("slow");      
                     }, 5000);     
                 }                
             } else {                            
                 if($("#formAlert").length == 0){   
                     $('#contactusForm').prepend("<p id='formAlert'>"+result.message+"</p>"); 
                     setTimeout(function() {
-                      $("#formAlert").hide();      
+                      $("#formAlert").hide("slow");      
                     }, 5000);   
                 }
                 else {
                     $("#formAlert").show();
                     $('#formAlert').html(result.message);
                     setTimeout(function() {
-                      $("#formAlert").hide();      
+                      $("#formAlert").hide("slow");      
                     }, 5000);    
                 }
             }
@@ -92,14 +92,14 @@ function contactus() {
             if($("#formAlert").length == 0){       
                 $('#contactusForm').prepend("<p id='formAlert'>Sunucu ile iletişim hatası oluştu. Lütfen daha sonra tekrar deneyin!</p>");
                 setTimeout(function() {
-                  $("#formAlert").hide();      
+                  $("#formAlert").hide("slow");      
                 }, 5000);     
             }
             else {
                 $("#formAlert").show();
                 $('#formAlert').html("Network error has occurred please try again!");
                 setTimeout(function() {
-                  $("#formAlert").hide();      
+                  $("#formAlert").hide("slow");      
                 }, 5000);   
             }
         }
