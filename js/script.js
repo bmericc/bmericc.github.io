@@ -49,8 +49,7 @@ function contactus() {
         data: { outputType:'json', form : $('#contactusForm').serialize()},
         type: 'post',                   
         async: 'true',
-        dataType:"jsonp",
-        jsonp:"callback",
+        dataType:"json",
         beforeSend: function() {
              $.mobile.loading( "show" ); // This will show ajax spinner
         },
