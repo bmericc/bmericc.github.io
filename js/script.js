@@ -41,6 +41,7 @@ $( window ).on( "resize", function(){
 
 function contactus() {
 
-    console.log("bahri");
+    var contactusForm = $('#contactusForm').serialize();
+    console.log(contactusForm);
 
 }
