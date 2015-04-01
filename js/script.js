@@ -45,11 +45,11 @@ $( window ).on( "resize", function(){
 
 function contactus() {
 
-     $.ajax({url: 'https://secure.prj.be/contactus/',
+     $.ajax({url: 'https://secure.prj.be/contactus/?callback=?',
         data: { outputType:'json', form : $('#contactusForm').serialize()},
         type: 'get',                   
         async: 'true',
-        dataType:"json",
+        dataType:"jsonp",
         contentType: "application/json",
         beforeSend: function() {
              $.mobile.loading( "show" ); // This will show ajax spinner
