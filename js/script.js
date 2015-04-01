@@ -48,4 +48,6 @@ function contactus() {
     var contactusForm = $('#contactusForm').serialize();
     console.log(contactusForm);
 
+    $('#contactusForm').html("");
+
 }
