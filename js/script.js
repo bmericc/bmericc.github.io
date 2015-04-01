@@ -33,9 +33,13 @@ function togglePanel(id){
 	removeActiveBtnClass();
 }
 
+/* trigger resize */
+$( document ).on( "pageshow ", function() {
+    $( window ).trigger( "resize" );
+});
 
 $( window ).on( "resize", function(){
-	if( $( window ).width() > 768 ) openPanel( "sidebar-left" ); else closePanel( "sidebar-left" );
+    if( $( window ).width() > 768 ) openPanel( "sidebar-left" ); else closePanel( "sidebar-left" );
 });
 
 
