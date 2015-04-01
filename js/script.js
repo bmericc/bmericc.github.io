@@ -75,7 +75,7 @@ function contactus() {
         },
         error: function (request,error) {          
             if($("#formAlert").length == 0){       
-                $('#contactusForm').prepend("<p id='formAlert'>Network error has occurred please try again!</p>");
+                $('#contactusForm').prepend("<p id='formAlert'>Sunucu ile iletişim hatası oluştu. Lütfen daha sonra tekrar deneyin!</p>");
             }
             else {
                 $('#formAlert').html("Network error has occurred please try again!");
