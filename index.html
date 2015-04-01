@@ -285,7 +285,7 @@
       
       <hr style="background: #bebebe; margin: 15px 0px;">
       <h3>İletişim Formu</h3>
-      <form method="post" name="contactus" id="contact-us">
+      <form method="post" name="contactus" id="contactus">
 
         <label for="contact-email">Ad soyad:</label>
         <input type="text" value="" id="contact-name" name="name">
@@ -297,12 +297,7 @@
         <label for="contact-message">Mesaj:</label>
         <textarea id="contact-message" name="message" rows="8" cols="40" class="ui-input-text ui-shadow-inset ui-body-inherit ui-corner-all ui-textinput-autogrow" style="height: 48px;"></textarea>
 
-
-        <label for="contact-code">Using only numbers, what is 8 + 5 ?</label>
-        
-        <input type="text" value="" id="contact-code" name="code">
-      
-        <input type="submit" name="send" id="send" value="Gönder">
+        <input type="button" name="send" id="send" value="Gönder" onclick="contactus();">
       </form>
       
     </div>

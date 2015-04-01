@@ -33,6 +33,14 @@ function togglePanel(id){
 	removeActiveBtnClass();
 }
 
+
 $( window ).on( "resize", function(){
 	if( $( window ).width() > 768 ) openPanel( "sidebar-left" ); else closePanel( "sidebar-left" );
 });
+
+
+function contactus() {
+
+    console.log("bahri");
+
+}
