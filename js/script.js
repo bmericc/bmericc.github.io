@@ -58,13 +58,28 @@ function contactus() {
         },
         success: function (result) {
             if(result.status) {
-                $('#contactusForm').html("<p>Mesajınız iletildi. <br/>İlginiz için teşekkür ederim</p>");           
-            } else {                               
-                $('#contactusForm').prepend(result.message); 
+                if($("#formAlert").length == 0){
+                    $('#contactusForm').html("<p id='formAlert'>Mesajınız iletildi. <br/>İlginiz için teşekkür ederim</p>");           
+                }    
+                else {
+                    $('#formAlert').html("Mesajınız iletildi. <br/>İlginiz için teşekkür ederim");
+                }                
+            } else {                            
+                if($("#formAlert").length == 0){   
+                    $('#contactusForm').prepend("<p id='formAlert'>"+result.message+"</p>"); 
+                }
+                else {
+                    $('#formAlert').html(result.message);
+                }
             }
         },
-        error: function (request,error) {              
-            $('#contactusForm').prepend('<p>Network error has occurred please try again!</p>');
+        error: function (request,error) {          
+            if($("#formAlert").length == 0){       
+                $('#contactusForm').prepend("<p id='formAlert'>Network error has occurred please try again!</p>");
+            }
+            else {
+                $('#formAlert').html("Network error has occurred please try again!");
+            }
         }
     });                   
 
