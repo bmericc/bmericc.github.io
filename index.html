@@ -8,7 +8,6 @@
 
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.3/jquery.mobile.min.js"></script>
-  <script type="text/javascript" src="/js/jquery.tmpl.min.js"></script>
   <script type="text/javascript" src="/js/script.js"></script>
 
   <script>
@@ -21,72 +20,6 @@
     ga('send', 'pageview');
 
   </script>
-
-<script type="text/javascript">
-$('#page3' ).on('pageinit', function(event, ui) {
-  
-  var zaman = new Date().getTime();
-  $.getJSON( '//app-jsons.s3-eu-west-1.amazonaws.com/apps/a87f/a87ff679a2f3e71d9181a67b7542122c/timeline/a87ff679a2f3e71d9181a67b7542122c_timeline_data.json?'+zaman, function(data) {    
-    var content = new Object();
-    content.data = data;
-    $("#timelineBasePage").tmpl(content).appendTo($("#timelineContent")); 
-    $("#timelineContent").listview("refresh");
-  }).fail(function( jqxhr, textStatus, error ) {
-      if(remoteDebug) { 
-           var err = textStatus + ", " + error;
-             console.log( "Request Failed: " + err );
-      } 
-  }); 
-  
-});
-</script>
-<script id="timelineBasePage" type="text/x-jquery-tmpl">
-{{each(i, line) data}}
-  {{if line.service=="facebook"}}
-    <li class="${line.service}">
-      <a href="javascript:feedsURL('${line.url}');">
-        <p class="ui-li-aside ui-icon-fa-${line.service}">{{html tarih(line.timestamp) }}</p>
-        {{html line.text}}
-        {{html line.content}}
-      </a>
-    </li>
-  {{/if}}
-  {{if line.service=="twitter"}}
-    <li class="${line.service}">
-      <a href="javascript:feedsURL('${line.url}');">
-        <p class="ui-li-aside ui-icon-fa-${line.service}">{{html tarih(line.timestamp) }}</p>
-        ${line.text}
-      </a>
-    </li>
-  {{/if}}
-  {{if line.service=="instagram"}}
-    <li class="${line.service}">
-      <a href="javascript:feedsURL('${line.link}');">
-        <p class="ui-li-aside ui-icon-fa-${line.service}">{{html tarih(line.timestamp) }}</p>       
-        <img src="${line.img_low}"/>
-        ${line.text}
-      </a>
-    </li>
-  {{/if}}
-  {{if line.service=="youtube"}}
-    <li class="${line.service}">
-      <a href="javascript:feedsURL('${line.url}');">
-        <p class="ui-li-aside ui-icon-fa-${line.service}">{{html tarih(line.timestamp) }}</p>
-        {{html line.content}}
-      </a>
-    </li>
-  {{/if}}
-  {{if line.service=="rss"}}
-    <li class="${line.service}">
-      <a href="javascript:feedsURL('${line.url}');">
-        <p class="ui-li-aside ui-icon-fa-${line.service}">{{html tarih(line.timestamp) }}</p>
-        <img src="${line.img}"/>
-        ${line.text}
-      </a>
-    </li>
-  {{/if}}   
-{{/each}}
-</script>
 
 </head>
 <body>
@@ -184,9 +117,8 @@ $('#page3' ).on('pageinit', function(event, ui) {
         <ul data-role="listview" class="ui-nodisc-icon" data-inset="false">
             <li class="iconLeft" data-icon="home"><a href="#page1" class="show-page-loading-msg">Ana Sayfa</a></li>
             <li class="iconLeft" data-icon="user"><a href="#page2" class="show-page-loading-msg">Özgeçmiş</a></li>
-            <li class="iconLeft" data-icon="bullets"><a href="#page3" class="show-page-loading-msg">Sosyal Medya</a></li>
-            <li class="iconLeft" data-icon="shop"><a href="#page4" class="show-page-loading-msg">Ödeme Bilgileri</a></li>
-            <li class="iconLeft" data-icon="info"><a href="#page5" class="show-page-loading-msg">İletişim</a></li>
+            <li class="iconLeft" data-icon="shop"><a href="#page3" class="show-page-loading-msg">Ödeme Bilgileri</a></li>
+            <li class="iconLeft" data-icon="info"><a href="#page4" class="show-page-loading-msg">İletişim</a></li>
         </ul>
 
         <a href="#dialog" data-rel="dialog" data-inline="true" class="dialog" data-role="button" data-mini="true" >Privacy Policy</a>
@@ -224,9 +156,8 @@ $('#page3' ).on('pageinit', function(event, ui) {
            <ul data-role="listview" class="ui-nodisc-icon" data-inset="false">
             <li class="iconLeft" data-icon="home"><a href="#page1" class="show-page-loading-msg">Ana Sayfa</a></li>
             <li class="iconLeft" data-icon="user"><a href="#page2" class="show-page-loading-msg">Özgeçmiş</a></li>
-            <li class="iconLeft" data-icon="bullets"><a href="#page3" class="show-page-loading-msg">Sosyal Medya</a></li>
-            <li class="iconLeft" data-icon="shop"><a href="#page4" class="show-page-loading-msg">Ödeme Bilgileri</a></li>
-             <li class="iconLeft" data-icon="info"><a href="#page5" class="show-page-loading-msg">İletişim</a></li>
+            <li class="iconLeft" data-icon="shop"><a href="#page3" class="show-page-loading-msg">Ödeme Bilgileri</a></li>
+             <li class="iconLeft" data-icon="info"><a href="#page4" class="show-page-loading-msg">İletişim</a></li>
         </ul>
 
         <a href="#dialog" data-rel="dialog" data-inline="true" class="dialog" data-role="button" data-mini="true" >Privacy Policy</a>
@@ -235,40 +166,7 @@ $('#page3' ).on('pageinit', function(event, ui) {
 
 </div>
 
-<div data-role="page" id="page3" data-module="timeline" >
-
-  <div data-role="header" data-position="fixed" data-tap-toggle="false" data-update-page-padding="false" data-theme="b">
-    <a class="ui-nodisc-icon" href="javascript:togglePanel('sidebar-left');" data-role="button" data-icon="bars" data-iconpos="notext">Menü</a>
-     <h1 id="tabTimelineName">Sosyal Medya</h1>
-  </div>
-
-  <div data-role="content" style="padding: .50em !important;">
-
-    <div class="social-list">
-            <ul data-role="listview" data-inset="true" data-theme="a" data-icon="false" id="timelineContent">
-        </ul>   
-    </div>
-
-  </div>
-
-   <div data-role="panel" id="sidebar-left" data-position="left" data-display="push" data-theme="b">
-    <div class="ui-panel-inner">
-        <img src="/images/logo.png" alt="Bahri.Info" height="50" style="margin-bottom:20px; margin-left: 30px;" />
-           <ul data-role="listview" class="ui-nodisc-icon" data-inset="false">
-            <li class="iconLeft" data-icon="home"><a href="#page1" class="show-page-loading-msg">Ana Sayfa</a></li>
-            <li class="iconLeft" data-icon="user"><a href="#page2" class="show-page-loading-msg">Özgeçmiş</a></li>
-            <li class="iconLeft" data-icon="bullets"><a href="#page3" class="show-page-loading-msg">Sosyal Medya</a></li>
-            <li class="iconLeft" data-icon="shop"><a href="#page4" class="show-page-loading-msg">Ödeme Bilgileri</a></li>
-             <li class="iconLeft" data-icon="info"><a href="#page5" class="show-page-loading-msg">İletişim</a></li>
-        </ul>
-
-        <a href="#dialog" data-rel="dialog" data-inline="true" class="dialog" data-role="button" data-mini="true" >Privacy Policy</a>
-    </div>    
-  </div>
-
-</div>
-
-<div data-role="page" id="page4" data-module="bank" >
+<div data-role="page" id="page3" data-module="bank" >
 
   <div data-role="header" data-position="fixed" data-tap-toggle="false" data-update-page-padding="false" data-theme="b">
     <a class="ui-nodisc-icon" href="javascript:togglePanel('sidebar-left');" data-role="button" data-icon="bars" data-iconpos="notext">Menü</a>
@@ -421,9 +319,8 @@ $('#page3' ).on('pageinit', function(event, ui) {
            <ul data-role="listview" class="ui-nodisc-icon" data-inset="false">
             <li class="iconLeft" data-icon="home"><a href="#page1" class="show-page-loading-msg">Ana Sayfa</a></li>
             <li class="iconLeft" data-icon="user"><a href="#page2" class="show-page-loading-msg">Özgeçmiş</a></li>
-            <li class="iconLeft" data-icon="bullets"><a href="#page3" class="show-page-loading-msg">Sosyal Medya</a></li>
-            <li class="iconLeft" data-icon="shop"><a href="#page4" class="show-page-loading-msg">Ödeme Bilgileri</a></li>
-             <li class="iconLeft" data-icon="info"><a href="#page5" class="show-page-loading-msg">İletişim</a></li>
+            <li class="iconLeft" data-icon="shop"><a href="#page3" class="show-page-loading-msg">Ödeme Bilgileri</a></li>
+             <li class="iconLeft" data-icon="info"><a href="#page4" class="show-page-loading-msg">İletişim</a></li>
         </ul>
 
         <a href="#dialog" data-rel="dialog" data-inline="true" class="dialog" data-role="button" data-mini="true" >Privacy Policy</a>
@@ -433,10 +330,7 @@ $('#page3' ).on('pageinit', function(event, ui) {
 </div>
 
 
-
-
-
-<div data-role="page" id="page5" data-module="contact" >
+<div data-role="page" id="page4" data-module="contact" >
 
   <div data-role="header" data-position="fixed" data-tap-toggle="false" data-update-page-padding="false" data-theme="b">
     <a class="ui-nodisc-icon" href="javascript:togglePanel('sidebar-left');" data-role="button" data-icon="bars" data-iconpos="notext">Menü</a>
@@ -486,9 +380,8 @@ $('#page3' ).on('pageinit', function(event, ui) {
            <ul data-role="listview" class="ui-nodisc-icon" data-inset="false">
             <li class="iconLeft" data-icon="home"><a href="#page1" class="show-page-loading-msg">Ana Sayfa</a></li>
             <li class="iconLeft" data-icon="user"><a href="#page2" class="show-page-loading-msg">Özgeçmiş</a></li>
-            <li class="iconLeft" data-icon="bullets"><a href="#page3" class="show-page-loading-msg">Sosyal Medya</a></li>
-            <li class="iconLeft" data-icon="shop"><a href="#page4" class="show-page-loading-msg">Ödeme Bilgileri</a></li>
-             <li class="iconLeft" data-icon="info"><a href="#page5" class="show-page-loading-msg">İletişim</a></li>
+            <li class="iconLeft" data-icon="shop"><a href="#page3" class="show-page-loading-msg">Ödeme Bilgileri</a></li>
+             <li class="iconLeft" data-icon="info"><a href="#page4" class="show-page-loading-msg">İletişim</a></li>
         </ul>
 
         <a href="#dialog" data-rel="dialog" data-inline="true" class="dialog" data-role="button" data-mini="true" >Privacy Policy</a>
