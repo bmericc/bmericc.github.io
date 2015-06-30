@@ -23,7 +23,7 @@
   </script>
 
 <script type="text/javascript">
-$('[data-module="timeline"]' ).on('pageinit', function(event, ui) {
+$('#page3' ).on('pageinit', function(event, ui) {
   
   var zaman = new Date().getTime();
   $.getJSON( '//app-jsons.s3-eu-west-1.amazonaws.com/apps/a87f/a87ff679a2f3e71d9181a67b7542122c/timeline/a87ff679a2f3e71d9181a67b7542122c_timeline_data.json?'+zaman, function(data) {    
