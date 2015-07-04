@@ -320,8 +320,43 @@ img:not(.no-responsive){max-width:100%;height:auto;}
 .color-g { background: #FFF; color: #000; }
 .color-h { background: #FFF; color: #000; }
 
+.emoji-img, .social-list .ui-listview li.instagram a img.emoji-img {
+	display: inline-block !important;
+    float: none !important;
+    margin: 0 !important;
+    width: 16px !important;	
+}
 
-.ui-icon-fa-twitter {}
-.ui-icon-fa-facebook {}
-.ui-icon-fa-instagram {}
-.ui-icon-fa-youtube {}
+[class^="ui-icon-"]:after, [class*=" ui-icon-"]:after {
+	font-family: FontAwesome ;
+	font-weight: normal;
+	font-style: normal;
+	display: inline-block;
+	text-align: center;
+	padding-top: 2px;
+	font-variant:normal;
+	vertical-align:middle;
+	text-transform:none;
+	text-rendering:auto;
+	line-height:1;
+	-webkit-font-smoothing:antialiased;
+	-moz-osx-font-smoothing:grayscale;
+	font-size:24px;
+
+}
+
+.ui-icon:not(.ui-icon-loading), .ui-icon-searchfield:after {
+	background: #666666;
+	background: rgba(0, 0, 0, .4);
+	color: #ffffff;
+	font-weight: normal;
+	text-shadow: none;
+}
+
+.ui-icon-fa-facebook:after {content: "\f09a";}
+.ui-icon-fa-twitter:after {content: "\f099";}
+.ui-icon-fa-instagram:after {content: "\f16d";}
+.ui-icon-fa-youtube:after {content: "\f167";}
+.ui-icon-fa-rss:after{content:"\f09e"}
+
+.ui-icon-social:after {content: "\f09a";}
