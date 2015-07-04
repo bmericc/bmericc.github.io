@@ -106,3 +106,53 @@ function contactus() {
     });                   
 
 }
+
+
+function tarih(date){
+
+    if(date % 1 !== 0) return false;  
+    if(date<1000) return false;
+
+    var time    = (parseInt(new Date().getTime()))/1000;
+    var fark    = time-parseInt(date); //to get the time since that moment
+
+    if(fark<0) fark= fark * -1;
+        
+    var tokens = new Array();
+        tokens[0] = "yıl";
+        tokens[1] = "ay";
+        tokens[2] = "hafta";
+        tokens[3] = "gün";
+        tokens[4] = "saat";
+        tokens[5] = "dakika";
+        tokens[6] = "saniye";
+                
+    var values = new Array();
+        values[0] = 31536000;
+        values[1] = 2592000;
+        values[2] = 604800;
+        values[3] = 86400;
+        values[4] = 3600;
+        values[5] = 60;
+        values[6] = 1;
+        
+    for(i=0; i<=tokens.length; i++) {
+        if(values[i] > fark) continue;
+        var numberOfUnits=Math.ceil(fark/values[i]);
+        return numberOfUnits+" "+tokens[i]+" önce";
+    }
+}
+        
+$(document).ready(function(){
+    
+    
+    $('p.ui-li-aside').each(function(index) {
+        var sayi=$(this).text();
+        var date= parseInt(sayi);
+        var fark=tarih(date);
+        if(sayi % 1 === 0) { $(this).text(fark.toString());  }
+    });
+    
+    $("#page1 #mainButton").hide();
+
+});
