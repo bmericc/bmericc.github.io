@@ -107,17 +107,7 @@ function contactus() {
 
 }
 
-var ua = navigator.userAgent;
-var android = ua.match(/Android/) != null;
-
-if( navigator.userAgent.match(/Android [\d+\.]{3,5}/) != null ) {
-    var androidVersion = navigator.userAgent.match(/Android [\d+\.]{3,5}/)[0].replace('Android ','').replace('.','');
-}
-else {
-    var androidVersion = null;
-}
-
-if( (android) && (androidVersion>43) ) {  
+if( getVersion()!=0 ) {  
     setTimeout( function() { 
         $(".ui-header").css( {"padding-top" : "20px", "height":"45px"} );
         $(".ui-header > a.ui-link").css( {"margin-top":"25px"} );
@@ -127,7 +117,7 @@ if( (android) && (androidVersion>43) ) {
 
 $( document ).on( "pagebeforeshow", function() {
 
-    if( (android) && (androidVersion>43) ) {  
+    if( getVersion()!=0 ) {  
         $(".ui-header").css( {"padding-top" : "20px", "height":"45px"} );
         $(".ui-header > a.ui-link").css( {"margin-top":"25px"} );
         $(".ui-title").css( {"margin-top" : "10px"} );
