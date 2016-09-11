@@ -107,7 +107,6 @@ function contactus() {
 
 }
 
-<<<<<<< HEAD
 var ua = navigator.userAgent;
 var android = ua.match(/Android/) != null;
 
@@ -135,7 +134,6 @@ $( document ).on( "pagebeforeshow", function() {
     }
 
 });
-=======
 
 function tarih(date){
 
@@ -248,4 +246,3 @@ function escapeRegExp(string) {
 function replaceAll(string, find, replace) {
   return string.replace(new RegExp(escapeRegExp(find), 'g'), replace);
 }
->>>>>>> 8cea9fd518f07b316236a2aa5b677b988a1aadc7
