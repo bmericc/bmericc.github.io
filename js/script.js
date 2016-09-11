@@ -112,7 +112,7 @@ if( getVersion()!=0 ) {
         $(".ui-header").css( {"padding-top" : "20px", "height":"45px"} );
         $(".ui-header > a.ui-link").css( {"margin-top":"25px"} );
         $(".ui-title").css( {"margin-top" : "10px"} );
-        $(".ui-panel").css( {"padding-top" : "20px"} );        
+        $(".ui-panel").css( {"padding-top" : "30px",  "top":"30px"} );    
      }, 150); 
 }
 
@@ -122,7 +122,7 @@ $( document ).on( "pagebeforeshow", function() {
         $(".ui-header").css( {"padding-top" : "20px", "height":"45px"} );
         $(".ui-header > a.ui-link").css( {"margin-top":"25px"} );
         $(".ui-title").css( {"margin-top" : "10px"} );
-        $(".ui-panel").css( {"padding-top" : "20px"} );                
+        $(".ui-panel").css( {"padding-top" : "30px",  "top":"30px"} );    
     }
 
 });
