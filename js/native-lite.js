@@ -19,10 +19,6 @@ function getVersion() {
     if (iphone) {
         //sendBridge({"method":"trackPageView", "page":page});
     }
-
-    if(remoteDebug) { 
-        console.log("getVersion");
-    }   
     
     return version;
 }
@@ -42,7 +38,4 @@ function feedsURL(url) {
         sendBridge({"method":"feedsURL", "url":url});
     }
     
-    if(!android && !iphone) {
-        window.parent.showAlert("Ã–nizleme ekranÄ±nda bu Ã¶zellik Ã§alÄ±ÅŸmamaktadÄ±r.");
-    }
 }
