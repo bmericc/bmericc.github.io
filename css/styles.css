@@ -365,6 +365,8 @@ img:not(.no-responsive){max-width:100%;height:auto;}
 .ui-icon-fa-twitter:after {content: "\f099";}
 .ui-icon-fa-instagram:after {content: "\f16d";}
 .ui-icon-fa-youtube:after {content: "\f167";}
-.ui-icon-fa-rss:after{content:"\f09e"}
+.ui-icon-fa-rss:after {content:"\f09e";}
+.ui-icon-fa-certificate:after {content: "\f0a3";}
 
 .ui-icon-social:after {content: "\f09a";}
+.ui-icon-certificate:after {content: "\f0a3";}
