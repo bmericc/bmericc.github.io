@@ -37,5 +37,8 @@ function feedsURL(url) {
     else if (iphone) {
         sendBridge({"method":"feedsURL", "url":url});
     }
+    else {
+        location.href = url;
+    }
     
 }
