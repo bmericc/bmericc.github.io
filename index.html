@@ -24,6 +24,21 @@
 
   </script>
 
+  <script>
+    $(document).ready(function () {
+
+      $.getJSON("https://" + window.location.hostname + "/check-ssl.json", function (data, status, xhr) {
+        console.log(status);
+      })
+      .success(function () {
+        console.log("Success");
+        if (window.location.protocol != "https:")
+          window.location.href = "https:" + window.location.href.substring(window.location.protocol.length);
+      })
+      
+    });
+  </script>
+
 </head>
 <body>
 <div data-role="page" id="page1" data-module="home" >
