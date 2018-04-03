@@ -36,7 +36,7 @@
   <div data-role="content" style="padding: .50em !important;">
 
     <div id="text-content">
-    <img src="http://www.gravatar.com/avatar/1ba198f7dbc5c41a452d9ff6fbe586bd?s=150" width="150px" height="150px" />
+    <img src="https://www.gravatar.com/avatar/1ba198f7dbc5c41a452d9ff6fbe586bd?s=150" width="150px" height="150px" />
     <br/>
 
     <h3>TB2BHR - Bahri Meriç CANLI</h3>
@@ -412,7 +412,7 @@
 $('[data-module="timeline"]' ).on('pageinit', function(event, ui) {
   
   var zaman = new Date().getTime();
-  $.getJSON( 'http://app-jsons.s3-eu-west-1.amazonaws.com/apps/a87f/a87ff679a2f3e71d9181a67b7542122c/timeline/a87ff679a2f3e71d9181a67b7542122c_timeline_data.json?'+zaman, function(data) {     
+  $.getJSON( 'https://app-jsons.s3-eu-west-1.amazonaws.com/apps/a87f/a87ff679a2f3e71d9181a67b7542122c/timeline/a87ff679a2f3e71d9181a67b7542122c_timeline_data.json?'+zaman, function(data) {     
     var content = new Object();
     content.data = data;
     $("#timelineBasePage").tmpl(content).appendTo($("#timelineContent")); 
@@ -515,11 +515,11 @@ $('[data-module="timeline"]' ).on('pageinit', function(event, ui) {
           <p>Yıllar önce başlayan SSL sertifika otoritesi oluşturma projemin kök sertifikaları</p>
           <br/>
           <ul data-role="listview">
-            <li><a class="ui-nodisc-icon" data-role="button" data-icon="certificate" href="javascript:feedsURL('http://www.canli.info/ca-certificates/Bahri_Meric_CANLI_Primary_CA.crt')">Primary Certification Authority</a></li>
+            <li><a class="ui-nodisc-icon" data-role="button" data-icon="certificate" href="javascript:feedsURL('https://www.canli.info/ca-certificates/Bahri_Meric_CANLI_Primary_CA.crt')">Primary Certification Authority</a></li>
 
-            <li><a class="ui-nodisc-icon" data-role="button" data-icon="certificate" href="javascript:feedsURL('http://www.canli.info/ca-certificates/Bahri_Meric_CANLI_Intermediate_CA.crt')">Intermediate Certification Authority</a></li>
+            <li><a class="ui-nodisc-icon" data-role="button" data-icon="certificate" href="javascript:feedsURL('https://www.canli.info/ca-certificates/Bahri_Meric_CANLI_Intermediate_CA.crt')">Intermediate Certification Authority</a></li>
 
-            <li><a class="ui-nodisc-icon" data-role="button" data-icon="certificate" href="javascript:feedsURL('http://www.canli.info/ca-certificates/ca-chain.cert.pem')">SSL Certificate Chain</a></li>
+            <li><a class="ui-nodisc-icon" data-role="button" data-icon="certificate" href="javascript:feedsURL('https://www.canli.info/ca-certificates/ca-chain.cert.pem')">SSL Certificate Chain</a></li>
           </ul>
     </div>
 
