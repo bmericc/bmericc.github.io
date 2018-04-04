@@ -329,8 +329,8 @@ img:not(.no-responsive){max-width:100%;height:auto;}
 
 @font-face {
   font-family: 'FontAwesome';
-  src: url('//app-commons.s3-eu-west-1.amazonaws.com/css/images/icons-font/fontawesome-webfont.eot?v=4.0.3');
-  src: url('//app-commons.s3-eu-west-1.amazonaws.com/css/images/icons-font/fontawesome-webfont.eot?#iefix&v=4.0.3') format('embedded-opentype'), url('//app-commons.s3-eu-west-1.amazonaws.com/css/images/icons-font/fontawesome-webfont.woff?v=4.0.3') format('woff'), url('//app-commons.s3-eu-west-1.amazonaws.com/css/images/icons-font/fontawesome-webfont.ttf?v=4.0.3') format('truetype'), url('//app-commons.s3-eu-west-1.amazonaws.com/css/images/icons-font/fontawesome-webfont.svg?v=4.0.3#fontawesomeregular') format('svg');
+  src: url('https://app-commons.s3-eu-west-1.amazonaws.com/css/images/icons-font/fontawesome-webfont.eot?v=4.0.3');
+  src: url('https://app-commons.s3-eu-west-1.amazonaws.com/css/images/icons-font/fontawesome-webfont.eot?#iefix&v=4.0.3') format('embedded-opentype'), url('https://app-commons.s3-eu-west-1.amazonaws.com/css/images/icons-font/fontawesome-webfont.woff?v=4.0.3') format('woff'), url('https://app-commons.s3-eu-west-1.amazonaws.com/css/images/icons-font/fontawesome-webfont.ttf?v=4.0.3') format('truetype'), url('https://app-commons.s3-eu-west-1.amazonaws.com/css/images/icons-font/fontawesome-webfont.svg?v=4.0.3#fontawesomeregular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
