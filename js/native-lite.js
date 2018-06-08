@@ -75,9 +75,6 @@ function closeDialog() {
     } else if (iphone && swift) {
         window.webkit.messageHandlers.iOScallbackHandler.postMessage({ "method": "closeDialog" });
     }
-    if (remoteDebug) {
-        console.log("closeDialog");
-    }
 }
 
 var flag = false;
