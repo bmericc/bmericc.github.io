@@ -241,3 +241,35 @@ function escapeRegExp(string) {
 function replaceAll(string, find, replace) {
   return string.replace(new RegExp(escapeRegExp(find), 'g'), replace);
 }
+
+$(document).on("pagebeforeshow", "#contentPage", function () {
+
+    var tag = getQueryVariable("tag");
+    var url = "/contents/" + tag + ".json";
+
+    $.ajax({
+        type: 'GET',
+        url: url,
+        async: false,
+        contentType: "application/json",
+        success: function (json) {
+            if (json.status == "ok") {
+                content(json);
+            }
+            else {
+                console.log("error");
+            }
+
+        },
+        error: function (e) {
+            console.log(e.message);
+        }
+    });
+
+});
+
+function  content(json) {
+
+    console.log(content);
+    
+}
