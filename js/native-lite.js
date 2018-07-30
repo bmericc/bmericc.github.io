@@ -15,7 +15,9 @@ if (window.webkit != null) {
     swift = false;
 }
 
-alert(typeof JSInterface);
+if(typeof JSInterface === "undefined"){ 
+    console.log("JSInterface");
+}
 
 function getVersion() {
     var version = 0;
