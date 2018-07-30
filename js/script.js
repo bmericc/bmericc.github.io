@@ -282,6 +282,9 @@ $(document).on("pagebeforeshow", "#contentPage", function () {
 
 function  content(json) {
 
-    console.log(content);
+    $("#contentPage #title").html(json.title);
+    $("#contentPage #post").html(json.content);
+    $("#contentPage #post").append("<br/><br/><i>source:"+json.source+"</i>");
+
     
 }
