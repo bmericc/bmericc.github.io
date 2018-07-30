@@ -15,6 +15,8 @@ if (window.webkit != null) {
     swift = false;
 }
 
+alert(typeof JSInterface);
+
 function getVersion() {
     var version = 0;
     if (android) {
