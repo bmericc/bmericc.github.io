@@ -268,6 +268,7 @@ $(document).on("pagebeforeshow", "#contentPage", function () {
         dataType: "json",
         contentType: "application/json",
         success: function (json) {
+            console.log(json);
             if (json.status == "ok") {
                 content(json);
             }
