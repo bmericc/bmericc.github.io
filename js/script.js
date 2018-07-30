@@ -262,7 +262,7 @@ $(document).on("pagebeforeshow", "#contentPage", function () {
     $.ajax({
         type: 'GET',
         url: url,
-        async: false,
+        dataType: "json",
         contentType: "application/json",
         success: function (json) {
             if (json.status == "ok") {
