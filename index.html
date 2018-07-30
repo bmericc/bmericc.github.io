@@ -57,7 +57,7 @@
     <h3>TB2BHR - Bahri Meriç CANLI</h3>
 
     <p>
-      <a href="content.html?tag=software-developer"><span class="tags ui-body color color-h">Software Developer</span></a>
+      <a href="#contentPage?tag=software-developer"><span class="tags ui-body color color-h">Software Developer</span></a>
       <span class="tags ui-body color color-h">Sys Admin</span>
       <span class="tags ui-body color color-h">Mountaineer</span>
       <span class="tags ui-body color color-h">Ham radio operator</span>
@@ -608,6 +608,49 @@ $('[data-module="timeline"]' ).on('pageinit', function(event, ui) {
     bahri@bahri.info<br />
 
   </div>    
+</div>
+
+<div data-role="page" id="contentPage" data-theme="a">
+  <div data-role="header" data-position="fixed" data-theme="b">
+    <a class="ui-nodisc-icon" href="javascript:togglePanel('sidebar-left');" data-role="button" data-icon="bars" data-iconpos="notext">Menü</a>
+    <h1 id="title">Bahri Meriç CANLI</h1>
+    <a href="javascript:goBack();" data-role="button" data-icon="back" data-rel="back" data-iconpos="notext" class="ui-nodisc-icon">Geri</a>
+  </div>
+  <div data-role="main" data-role="content" class="ui-content" data-theme="b">
+    <div id="post" class="ui-body ui-body-a"></div>
+  </div>
+
+  <div data-role="panel" id="sidebar-left" data-position="left" data-display="push" data-theme="a">
+    <div class="ui-panel-inner">
+      <img src="/images/logo.png" alt="Bahri.Info" height="50" style="margin-bottom:20px; margin-left: 30px;" />
+      <ul data-role="listview" class="ui-nodisc-icon" data-inset="false">
+        <li class="iconLeft" data-icon="home">
+          <a href="#page1" class="show-page-loading-msg">Ana Sayfa</a>
+        </li>
+        <li class="iconLeft" data-icon="user">
+          <a href="#page2" class="show-page-loading-msg">Özgeçmiş</a>
+        </li>
+        <li class="iconLeft" data-icon="social">
+          <a href="#page5" class="show-page-loading-msg">Sosyal Medya</a>
+        </li>
+        <li class="iconLeft" data-icon="certificate">
+          <a href="#page6" class="show-page-loading-msg">Sertifika Otoritesi</a>
+        </li>
+        <script type="text/javascript">
+          if ((!android) || (!JSInterface)) {
+            document.write('<li class="iconLeft" data-icon="shop"><a href="#page3" class="show-page-loading-msg">Ödeme Bilgileri</a></li>');
+          }
+        </script>
+        <li class="iconLeft" data-icon="info">
+          <a href="#page4" class="show-page-loading-msg">İletişim</a>
+        </li>
+      </ul>
+
+      <a href="#dialog" data-rel="dialog" data-inline="true" class="dialog" data-role="button" data-mini="true">Privacy Policy</a>
+    </div>
+  </div>
+
+
 </div>
 
 </body>
