@@ -16,7 +16,7 @@ if (window.webkit != null) {
 }
 
 if(typeof JSInterface === "undefined"){ 
-    console.log("JSInterface");
+    var JSInterface = false;
 }
 
 function getVersion() {
