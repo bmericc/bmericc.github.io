@@ -257,9 +257,6 @@ function getQueryVariable(variable)
 $(document).on("pagebeforeshow", "#contentPage", function () {
 
     var tag = getQueryVariable("tag");
-
-    console.log(tag);
-
     var url = "/contents/" + tag + ".json";
 
     $.ajax({
