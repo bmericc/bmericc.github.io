@@ -254,10 +254,9 @@ function getQueryVariable(variable)
    return(false);
 }
 
-$(document).on("pagebeforeshow", "#contentPage", function () {
+$(document).on("pagebeforeshow", "#contentPage", function (e, data) {
 
-    var parameters = $(this).data("url").split("?");
-    console.log(parameters);
+    console.log(data.prevPage.attr('id'));
 
     var tag = getQueryVariable("tag");
     var url = "/contents/" + tag + ".json";
