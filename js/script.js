@@ -254,12 +254,8 @@ function getQueryVariable(variable)
    return(false);
 }
 
-$(document).on("pagebeforeshow", "#contentPage", function (e, data) {
+function changeContent(tag) {
 
-    console.log(data.prevPage.attr('id'));
-    console.log(data.prevPage);
-
-    var tag = getQueryVariable("tag");
     var url = "/contents/" + tag + ".json";
 
     $.ajax({
@@ -281,7 +277,7 @@ $(document).on("pagebeforeshow", "#contentPage", function (e, data) {
         }
     });
 
-});
+}
 
 function  content(json) {
 
