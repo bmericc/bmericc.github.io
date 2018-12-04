@@ -307,8 +307,7 @@ img:not(.no-responsive){max-width:100%;height:auto;}
 }
 
 .color {
-  border: 1px solid #000;  
-  text-shadow: 0 1px 0 #111; 
+  border: 1px solid #000;   
 }
 
 .color-a { background: #FFF; color: #000; }
