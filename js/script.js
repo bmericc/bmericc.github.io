@@ -45,7 +45,7 @@ $( window ).on( "resize", function(){
 
 function contactus() {
 
-     $.ajax({url: 'http://secure.prj.be/contactus/?callback=?',
+     $.ajax({url: 'https://secure.prj.be/contactus/?callback=?',
         data: { outputType:'json', form : $('#contactusForm').serialize()},
         type: 'get',                   
         async: 'true',
