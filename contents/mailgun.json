@@ -1,0 +1,6 @@
+{
+    "status": true,
+    "title": "Mailgun",
+    "content": "Mailgun, geliştiriciler için tasarlanmış güçlü bir e-posta API servisidir. Transactional e-posta gönderimi, e-posta doğrulama ve webhook altyapısı sunan Mailgun; yüksek teslimat oranları ve detaylı analitik raporlarıyla öne çıkar. Bahri, Laravel projelerine Mailgun entegrasyonu sağlayan bir paket geliştirmiştir. Bu paket, uygulamalara profesyonel e-posta altyapısını kolayca eklemeye yarar.",
+    "source": "github.com/bahricanli/Mailgun"
+}

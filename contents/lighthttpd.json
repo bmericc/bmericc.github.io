@@ -1,6 +1,6 @@
 {
     "status": true,
-    "title":"LightHTTPD",
-    "content": "Dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır. 1960'larda Lorem Ipsum pasajları da içeren Letraset yapraklarının yayınlanması ile ve yakın zamanda Aldus PageMaker gibi Lorem Ipsum sürümleri içeren masaüstü yayıncılık yazılımları ile popüler olmuştur",
-    "source":"lipsum.com"
+    "title": "Lighttpd",
+    "content": "Lighttpd (lighty), düşük kaynak tüketimiyle yüksek performanslı web sunuculuğu için tasarlanmış açık kaynaklı bir web sunucusudur. FastCGI, SCGI ve mod_proxy desteğiyle PHP ve diğer dilleri çalıştırabilen lighttpd; gömülü sistemler, düşük belleğe sahip VPS'ler ve yüksek eş zamanlı bağlantı gerektiren ortamlarda tercih edilir.",
+    "source": "lighttpd.net"
 }

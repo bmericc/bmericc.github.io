@@ -1,6 +1,6 @@
 {
     "status": true,
-    "title":"Cpanel/WHM",
-    "content": "Dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır. 1960'larda Lorem Ipsum pasajları da içeren Letraset yapraklarının yayınlanması ile ve yakın zamanda Aldus PageMaker gibi Lorem Ipsum sürümleri içeren masaüstü yayıncılık yazılımları ile popüler olmuştur",
-    "source":"lipsum.com"
+    "title": "cPanel / WHM",
+    "content": "cPanel, hosting sağlayıcılarının ve son kullanıcıların web hosting hesaplarını yönettiği grafik arayüzlü kontrol panelidir. WHM (Web Host Manager) ise reseller ve sunucu yöneticilerine birden fazla cPanel hesabını tek panelden yönetme imkânı tanır. DNS yönetimi, e-posta, FTP, veritabanı ve SSL sertifika işlemleri bu platformlar üzerinden kolayca yapılabilir.",
+    "source": "cpanel.net"
 }

@@ -1,0 +1,6 @@
+{
+    "status": true,
+    "title": "Docker",
+    "content": "Docker, uygulamaları izole konteynerler içinde paketleyerek 'bende çalışıyor' sorununu ortadan kaldıran açık kaynaklı konteynerizasyon platformudur. 2013'te Solomon Hykes tarafından geliştirilen Docker; geliştirme, test ve üretim ortamları arasındaki tutarsızlıkları giderir. Bahri, OpenMediaVault'u ARM mimarisinde Docker ile çalıştıran projeler ve WhatsApp Bridge konteynerleştirmesi dahil çeşitli Docker projeleri geliştirmiştir.",
+    "source": "docker.com"
+}

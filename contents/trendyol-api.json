@@ -1,0 +1,6 @@
+{
+    "status": true,
+    "title": "Trendyol API Entegrasyonu",
+    "content": "Bahri Meriç Canlı, Trendyol pazaryeri için kapsamlı bir PHP API paketi geliştirmiştir. Bu paket; ürün listeleme, sipariş yönetimi, kargo takibi ve mağaza yönetimi işlemlerini programatik olarak gerçekleştirmeye olanak tanır. Websitenize gelen Trendyol siparişlerini otomatik olarak aktaracak fonksiyonlar da içermektedir. Trendyol, Türkiye'nin en büyük e-ticaret platformlarından biridir.",
+    "source": "github.com/bahricanli/trendyol-php-api"
+}

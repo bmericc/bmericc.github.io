@@ -1,6 +1,6 @@
 {
     "status": true,
-    "title":"Apache",
-    "content": "Dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır. 1960'larda Lorem Ipsum pasajları da içeren Letraset yapraklarının yayınlanması ile ve yakın zamanda Aldus PageMaker gibi Lorem Ipsum sürümleri içeren masaüstü yayıncılık yazılımları ile popüler olmuştur",
-    "source":"lipsum.com"
+    "title": "Apache HTTP Server",
+    "content": "Apache HTTP Server, 1995'ten bu yana web'in omurgasını oluşturan açık kaynaklı web sunucusudur. Apache Software Foundation tarafından geliştirilen Apache, modüler yapısıyla PHP, Python, Perl gibi dilleri destekler; .htaccess dosyasıyla esnek yapılandırma sunar. Sanal host, SSL/TLS, URL yeniden yazımı (mod_rewrite) ve kimlik doğrulama modülleriyle tam özellikli bir web sunucusudur.",
+    "source": "httpd.apache.org"
 }

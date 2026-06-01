@@ -1,6 +1,6 @@
 {
     "status": true,
-    "title":"Arduino",
-    "content": "Dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır. 1960'larda Lorem Ipsum pasajları da içeren Letraset yapraklarının yayınlanması ile ve yakın zamanda Aldus PageMaker gibi Lorem Ipsum sürümleri içeren masaüstü yayıncılık yazılımları ile popüler olmuştur",
-    "source":"lipsum.com"
+    "title": "Arduino",
+    "content": "Arduino, gömülü sistem ve fiziksel hesaplama projelerinde kullanılan açık kaynaklı mikrodenetleyici platformudur. 2005'te eğitim amacıyla geliştirilen Arduino; LED kontrolünden sensör okumaya, motor sürücülerinden IoT projelerine kadar geniş bir yelpazede kullanılır. C/C++ tabanlı Arduino IDE ve devasa kütüphane ekosistemiyle donanım programlamayı erişilebilir kılmaktadır.",
+    "source": "arduino.cc"
 }

@@ -1,6 +1,6 @@
 {
     "status": true,
-    "title":"C++",
-    "content": "Dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır. 1960'larda Lorem Ipsum pasajları da içeren Letraset yapraklarının yayınlanması ile ve yakın zamanda Aldus PageMaker gibi Lorem Ipsum sürümleri içeren masaüstü yayıncılık yazılımları ile popüler olmuştur",
-    "source":"lipsum.com"
+    "title": "C++",
+    "content": "C++, Bjarne Stroustrup tarafından 1979'da C diline nesne yönelimli özellikler eklenerek geliştirilen sistem programlama dilidir. İşletim sistemleri, oyun motorları, gömülü sistemler ve yüksek performanslı uygulamalar C++ ile yazılmaktadır. Doğrudan donanım erişimi, bellek yönetimi ve yüksek hız gerektiren durumlarda hâlâ ilk tercih olan dildir.",
+    "source": "isocpp.org"
 }

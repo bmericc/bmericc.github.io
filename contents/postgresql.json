@@ -1,6 +1,6 @@
 {
     "status": true,
-    "title":"PostgreSQL",
-    "content": "Dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır. 1960'larda Lorem Ipsum pasajları da içeren Letraset yapraklarının yayınlanması ile ve yakın zamanda Aldus PageMaker gibi Lorem Ipsum sürümleri içeren masaüstü yayıncılık yazılımları ile popüler olmuştur",
-    "source":"lipsum.com"
+    "title": "PostgreSQL",
+    "content": "PostgreSQL, 30+ yıllık geliştirme geçmişiyle dünyanın en gelişmiş açık kaynaklı nesne-ilişkisel veritabanıdır. ACID uyumluluğu, güçlü JSON desteği, tam metin arama, pencere fonksiyonları ve uzantı ekosistemiyle kurumsal ihtiyaçları karşılar. PostGIS uzantısıyla coğrafi veri yönetimi de mümkündür. Doğruluk ve güvenilirlik gerektiren her projede ilk tercih.",
+    "source": "postgresql.org"
 }

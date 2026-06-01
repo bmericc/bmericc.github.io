@@ -1,6 +1,6 @@
 {
     "status": true,
-    "title":"IIS",
-    "content": "Dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır. 1960'larda Lorem Ipsum pasajları da içeren Letraset yapraklarının yayınlanması ile ve yakın zamanda Aldus PageMaker gibi Lorem Ipsum sürümleri içeren masaüstü yayıncılık yazılımları ile popüler olmuştur",
-    "source":"lipsum.com"
+    "title": "IIS (Internet Information Services)",
+    "content": "Internet Information Services (IIS), Microsoft'un Windows Server işletim sistemlerine entegre ettiği web sunucusudur. ASP.NET, PHP ve klasik ASP uygulamalarını barındırabilen IIS; Application Pool izolasyonu, Web Deploy, URL Rewrite ve Windows kimlik doğrulamasıyla kurumsal ortamlarda güvenli ve ölçeklenebilir bir platform sunar.",
+    "source": "microsoft.com"
 }

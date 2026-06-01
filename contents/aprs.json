@@ -1,0 +1,6 @@
+{
+    "status": true,
+    "title": "APRS (Otomatik Paket Raporlama Sistemi)",
+    "content": "APRS (Automatic Packet Reporting System), konum, hava durumu ve kısa mesajları radyo dalgalarıyla gerçek zamanlı paylaşmaya yarayan amatör telsiz protokolüdür. TB2BHR çağrı işaretiyle lisanslı bir amatör telsiz operatörü olan Bahri, APRS tracker donanım projesi geliştirmiştir. Ayrıca AP510 APRS TNC modülü için kurulum aracı ve ArduinoTrack balon uçuş kontrolcüsünün firmware'ini yazmıştır — bu son proje yüksek irtifaya gönderilen radyo balonlarını takip etmek için kullanılmaktadır.",
+    "source": "github.com/bmericc"
+}

@@ -1,6 +1,6 @@
 {
     "status": true,
-    "title":"Debian",
-    "content": "Dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır. 1960'larda Lorem Ipsum pasajları da içeren Letraset yapraklarının yayınlanması ile ve yakın zamanda Aldus PageMaker gibi Lorem Ipsum sürümleri içeren masaüstü yayıncılık yazılımları ile popüler olmuştur",
-    "source":"lipsum.com"
+    "title": "Debian GNU/Linux",
+    "content": "Debian, 1993'te Ian Murdock tarafından başlatılan ve gönüllü geliştiriciler topluluğu tarafından yönetilen en köklü Linux dağıtımlarından biridir. Kararlılığı, güvenlik güncellemeleri ve 59.000'den fazla paketten oluşan deposuyla Debian; Ubuntu, Linux Mint ve Raspberry Pi OS dahil pek çok popüler dağıtımın anası konumundadır. Bahri, kişisel projelerinde ve sunucu altyapılarında birincil tercih olarak Debian kullanmaktadır.",
+    "source": "debian.org"
 }

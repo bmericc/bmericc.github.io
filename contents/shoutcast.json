@@ -1,0 +1,6 @@
+{
+    "status": true,
+    "title": "Shoutcast / İnternet Radyosu",
+    "content": "Shoutcast, Nullsoft tarafından geliştirilen ve internet radyosu yayıncılığının temel protokollerinden biri olan audio streaming platformudur. Kişisel olarak internet radyosu işleten Bahri, Shoutcast Transcoder API'si için bir JavaScript wrapper kütüphanesi geliştirmiştir. Bu kütüphane; stream yönetimi, ses kalitesi kontrolü ve yayın parametrelerinin programatik olarak değiştirilmesini kolaylaştırmaktadır.",
+    "source": "github.com/bmericc/shoutcast-transcoder"
+}

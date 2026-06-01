@@ -1,6 +1,6 @@
 {
     "status": true,
-    "title":"LibreOffice",
-    "content": "Dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır. 1960'larda Lorem Ipsum pasajları da içeren Letraset yapraklarının yayınlanması ile ve yakın zamanda Aldus PageMaker gibi Lorem Ipsum sürümleri içeren masaüstü yayıncılık yazılımları ile popüler olmuştur",
-    "source":"lipsum.com"
+    "title": "LibreOffice",
+    "content": "LibreOffice, Microsoft Office'e açık kaynaklı ve tamamen ücretsiz alternatif sunan güçlü ofis paketidir. The Document Foundation tarafından geliştirilen LibreOffice; Writer (kelime işlemci), Calc (elektronik tablo), Impress (sunum), Draw (çizim) ve Base (veritabanı) uygulamalarını içerir. MS Office dosya formatlarıyla tam uyumluluk sunan LibreOffice, Windows, macOS ve Linux üzerinde çalışır.",
+    "source": "libreoffice.org"
 }

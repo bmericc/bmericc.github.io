@@ -1,6 +1,6 @@
 {
     "status": true,
-    "title":"Microsoft Access",
-    "content": "Dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır. 1960'larda Lorem Ipsum pasajları da içeren Letraset yapraklarının yayınlanması ile ve yakın zamanda Aldus PageMaker gibi Lorem Ipsum sürümleri içeren masaüstü yayıncılık yazılımları ile popüler olmuştur",
-    "source":"lipsum.com"
+    "title": "Microsoft Access",
+    "content": "Microsoft Access, Microsoft Office paketinin parçası olan masaüstü veritabanı yönetim sistemidir. Sürükle-bırak form tasarımı, raporlama araçları ve SQL desteğiyle küçük işletmeler ve kurumların veri yönetimi ihtiyaçlarını karşılar. Makro ve VBA entegrasyonuyla iş süreçlerini otomatize etmek mümkündür. Büyük veri tabanları için SQL Server'a entegrasyon imkânı da sunar.",
+    "source": "microsoft.com"
 }

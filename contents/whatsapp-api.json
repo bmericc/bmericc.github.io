@@ -1,0 +1,6 @@
+{
+    "status": true,
+    "title": "WhatsApp Bridge",
+    "content": "Bahri, WhatsApp mesajlaşma altyapısını üçüncü taraf uygulamalarla entegre etmek için bir WhatsApp Bridge projesi geliştirmiştir. Hem standart PHP hem de Docker konteynerı olarak sunulan bu proje; bildirim gönderme, mesaj alma ve webhook entegrasyonu gibi işlevleri mümkün kılmaktadır. Docker imajı sayesinde kurulum ve dağıtım son derece kolaylaştırılmıştır.",
+    "source": "github.com/bahricanli/whatsapp-bridge"
+}

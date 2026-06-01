@@ -1,6 +1,6 @@
 {
     "status": true,
-    "title":"Javascript",
-    "content": "Dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır. 1960'larda Lorem Ipsum pasajları da içeren Letraset yapraklarının yayınlanması ile ve yakın zamanda Aldus PageMaker gibi Lorem Ipsum sürümleri içeren masaüstü yayıncılık yazılımları ile popüler olmuştur",
-    "source":"lipsum.com"
+    "title": "JavaScript",
+    "content": "JavaScript, web tarayıcıları için 1995'te Brendan Eich tarafından 10 günde yazılan ve bugün dünyanın en yaygın kullanılan programlama diline dönüşen bir dildir. Başlangıçta yalnızca tarayıcıda çalışan JS, Node.js ile sunucu tarafına da taşınmış; React, Vue, Angular gibi çatılarla modern web uygulamalarının merkezine oturmuştur.",
+    "source": "developer.mozilla.org"
 }

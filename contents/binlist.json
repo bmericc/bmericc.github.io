@@ -1,0 +1,6 @@
+{
+    "status": true,
+    "title": "Banka BIN Listesi",
+    "content": "BIN (Bank Identification Number), bir kredi veya banka kartının ilk 6 hanesidir ve kartın hangi bankaya ve kart tipine ait olduğunu belirtir. Bahri, Türk bankaları için kapsamlı bir BIN listesi veri seti ve PHP sorgu kütüphanesi geliştirmiştir (4+ GitHub yıldızı). Bu veri seti; ödeme formlarında kart tipini otomatik algılama, sahtekârlık tespiti ve ödeme yönlendirme gibi e-ticaret senaryolarında kullanılmaktadır.",
+    "source": "github.com/bmericc/binlist"
+}

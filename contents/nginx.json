@@ -1,6 +1,6 @@
 {
     "status": true,
-    "title":"Nginx",
-    "content": "Dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır. 1960'larda Lorem Ipsum pasajları da içeren Letraset yapraklarının yayınlanması ile ve yakın zamanda Aldus PageMaker gibi Lorem Ipsum sürümleri içeren masaüstü yayıncılık yazılımları ile popüler olmuştur",
-    "source":"lipsum.com"
+    "title": "Nginx",
+    "content": "Nginx (Engine-X), Igor Sysoev tarafından 2004'te geliştirilen yüksek performanslı web sunucusu, ters proxy ve yük dengeleyicidir. Event-driven mimarisiyle eş zamanlı binlerce bağlantıyı minimum kaynak tüketimiyle yönetebilen Nginx, statik içerik sunumunda Apache'den çok daha verimlidir. Günümüzde dünyanın en yüksek trafikli sitelerinin büyük çoğunluğu Nginx üzerinde çalışmaktadır.",
+    "source": "nginx.org"
 }

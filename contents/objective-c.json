@@ -1,6 +1,6 @@
 {
     "status": true,
-    "title":"Objective C",
-    "content": "Dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır. 1960'larda Lorem Ipsum pasajları da içeren Letraset yapraklarının yayınlanması ile ve yakın zamanda Aldus PageMaker gibi Lorem Ipsum sürümleri içeren masaüstü yayıncılık yazılımları ile popüler olmuştur",
-    "source":"lipsum.com"
+    "title": "Objective-C",
+    "content": "Objective-C, Apple'ın iOS ve macOS platformları için kullandığı nesne yönelimli programlama dilidir. C diline Smalltalk tarzı mesajlaşma ekleyen bu dil, 2014'te Swift'in tanıtımına kadar Apple ekosisteminin temel geliştirme dili olarak kullanılmıştır. Dinamik runtime sistemi ve Cocoa/Cocoa Touch çatısıyla güçlü native uygulamalar üretilmesini sağlar.",
+    "source": "developer.apple.com"
 }

@@ -1,0 +1,6 @@
+{
+    "status": true,
+    "title": "Hepsiburada API Entegrasyonu",
+    "content": "Bahri Meriç Canlı, Hepsiburada pazaryeri için Laravel paketi olarak tasarlanmış bir PHP entegrasyon kütüphanesi geliştirmiştir. Bu paket sayesinde mağaza sahipleri ürünlerini, siparişlerini ve envanter bilgilerini Hepsiburada platformuyla otomatik senkronize edebilir. Hepsiburada, Türkiye'nin köklü ve büyük ölçekli e-ticaret platformlarından biridir.",
+    "source": "github.com/bahricanli/hepsiburada-php-api"
+}

@@ -1,6 +1,6 @@
 {
     "status": true,
-    "title":"Raspberry Pi",
-    "content": "Dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır. 1960'larda Lorem Ipsum pasajları da içeren Letraset yapraklarının yayınlanması ile ve yakın zamanda Aldus PageMaker gibi Lorem Ipsum sürümleri içeren masaüstü yayıncılık yazılımları ile popüler olmuştur",
-    "source":"lipsum.com"
+    "title": "Raspberry Pi",
+    "content": "Raspberry Pi, Raspberry Pi Foundation tarafından geliştirilen kredi kartı büyüklüğünde tek kartlı bilgisayardır. 2012'de eğitim amacıyla tasarlanan bu küçük güçlü bilgisayar, ev otomasyonu, medya merkezi, retro oyun konsolu, ağ analiz aracı ve prototip geliştirme gibi sayısız alanda kullanılmaktadır. Debian tabanlı Raspberry Pi OS ile Linux üzerinde tam teşekküllü yazılım geliştirmek mümkündür.",
+    "source": "raspberrypi.org"
 }

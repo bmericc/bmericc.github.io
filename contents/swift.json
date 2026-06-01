@@ -1,0 +1,6 @@
+{
+    "status": true,
+    "title": "Swift",
+    "content": "Swift, Apple'ın 2014'te tanıttığı modern, güvenli ve yüksek performanslı iOS/macOS programlama dilidir. Objective-C'nin yerini alan Swift; tip güvenliği, opsiyonel değerler ve protokol odaklı programlama ile modern yazılım geliştirme pratiğini Apple platformlarına taşır. Bahri, Tanita tartı verilerini Apple Health uygulamasıyla senkronize eden SyncPlanet adlı iOS uygulamasını Swift ile geliştirmiştir.",
+    "source": "github.com/bmericc/SyncPlanet"
+}

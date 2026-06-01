@@ -1,0 +1,6 @@
+{
+    "status": true,
+    "title": "ESP8266",
+    "content": "ESP8266, Espressif Systems tarafından üretilen düşük maliyetli Wi-Fi entegre mikrodenetleyici çipidir. IoT projelerinin en popüler donanımlarından biri olan ESP8266; Arduino IDE ile programlanabilir, TCP/IP yığını ve Wi-Fi bağlantısı içerir. Bahri, ESP8266 üzerinde Ai-Thinker A7 GSM modülüyle haberleşen bir kütüphane geliştirmiştir — böylece hem Wi-Fi hem de GSM/GPRS bağlantısına sahip IoT cihazları oluşturmak mümkün olmaktadır.",
+    "source": "github.com/bmericc/AiThinker_A7"
+}

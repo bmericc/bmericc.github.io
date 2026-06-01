@@ -1,0 +1,6 @@
+{
+    "status": true,
+    "title": "Sanal POS (Türk Bankaları)",
+    "content": "Sanal POS, e-ticaret sitelerinin kredi kartı ödemelerini güvenli biçimde işleyebilmesini sağlayan ödeme altyapısıdır. Bahri, Türkiye'deki başlıca bankaların sanal POS entegrasyonunu tek bir PHP paketi altında toplayan açık kaynaklı bir proje geliştirmiştir. Garanti, Yapı Kredi, İş Bankası, Akbank ve Ziraat Bankası dahil birçok bankanın 3D Secure ve standart ödeme akışlarını destekleyen bu paket, Türk e-ticaret geliştiricileri için pratik bir çözüm sunmaktadır.",
+    "source": "github.com/bmericc/pos"
+}

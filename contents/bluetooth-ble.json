@@ -1,0 +1,6 @@
+{
+    "status": true,
+    "title": "Bluetooth / BLE",
+    "content": "Bluetooth Low Energy (BLE), düşük güç tüketimiyle kısa mesafeli kablosuz veri iletişimi sağlayan modern Bluetooth standardıdır. Bahri, Raspberry Pi Zero üzerinde Node.js ve Bleno ile BLE sunucu projesi, nRF51822 çipli donanımlar için bluepy örnekleri ve Arduino BLE tarayıcı geliştirmiştir. RTL8723BS Bluetooth sürücüsü için Debian paketi de hazırlamıştır (2+ yıldız). Bu projelerin büyük bölümü IoT ve ev otomasyonu senaryolarına yöneliktir.",
+    "source": "github.com/bmericc"
+}

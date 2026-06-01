@@ -1,6 +1,6 @@
 {
     "status": true,
-    "title":"JQuery",
-    "content": "Dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır. 1960'larda Lorem Ipsum pasajları da içeren Letraset yapraklarının yayınlanması ile ve yakın zamanda Aldus PageMaker gibi Lorem Ipsum sürümleri içeren masaüstü yayıncılık yazılımları ile popüler olmuştur",
-    "source":"lipsum.com"
+    "title": "jQuery",
+    "content": "jQuery, 2006'da John Resig tarafından geliştirilen ve DOM manipülasyonunu, AJAX işlemlerini ve animasyonları kolaylaştıran JavaScript kütüphanesidir. 'Write less, do more' sloganıyla çıkan jQuery, tarayıcılar arası uyumluluk sorunlarını ortadan kaldırmış ve uzun yıllar web geliştirmenin vazgeçilmezi olmuştur. Hâlâ milyonlarca web sitesinde aktif olarak kullanılmaktadır.",
+    "source": "jquery.com"
 }

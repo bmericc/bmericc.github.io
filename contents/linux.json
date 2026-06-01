@@ -1,6 +1,6 @@
 {
     "status": true,
-    "title":"Linux",
-    "content": "Dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır. 1960'larda Lorem Ipsum pasajları da içeren Letraset yapraklarının yayınlanması ile ve yakın zamanda Aldus PageMaker gibi Lorem Ipsum sürümleri içeren masaüstü yayıncılık yazılımları ile popüler olmuştur",
-    "source":"lipsum.com"
+    "title": "GNU/Linux",
+    "content": "Linux, 1991'de Linus Torvalds tarafından geliştirilen açık kaynaklı işletim sistemi çekirdeğidir. GNU araçlarıyla birleşerek GNU/Linux ekosistemini oluşturan bu platform; sunucuların %96'sını, dünyanın en hızlı süperbilgisayarlarının %100'ünü ve Android aracılığıyla milyarlarca mobil cihazı güçlendirmektedir. Bahri, lise yıllarında Mandrake Linux ile başladığı GNU/Linux yolculuğunu 20+ yıldır sürdürmektedir.",
+    "source": "kernel.org"
 }

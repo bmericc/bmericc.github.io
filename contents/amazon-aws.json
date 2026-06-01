@@ -1,6 +1,6 @@
 {
     "status": true,
-    "title":"Amazon AWS",
-    "content": "Dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır. 1960'larda Lorem Ipsum pasajları da içeren Letraset yapraklarının yayınlanması ile ve yakın zamanda Aldus PageMaker gibi Lorem Ipsum sürümleri içeren masaüstü yayıncılık yazılımları ile popüler olmuştur",
-    "source":"lipsum.com"
+    "title": "Amazon AWS",
+    "content": "Amazon Web Services (AWS), Amazon'un sunduğu kapsamlı bulut bilişim platformudur. 200'den fazla hizmetiyle EC2 (sanal sunucular), S3 (nesne depolama), RDS (yönetilen veritabanlar), Lambda (sunucusuz fonksiyonlar) ve CloudFront (CDN) başlıca bileşenlerdir. Küçük start-up'lardan Fortune 500 şirketlerine kadar dünya genelindeki altyapının büyük bölümünü AWS üzerinde çalışmaktadır.",
+    "source": "aws.amazon.com"
 }

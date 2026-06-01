@@ -1,0 +1,6 @@
+{
+    "status": true,
+    "title": "Netgsm SMS Entegrasyonu",
+    "content": "Netgsm, Türkiye'nin önde gelen toplu SMS ve OTP (tek kullanımlık şifre) servis sağlayıcılarından biridir. Bahri, Netgsm'in API'sini PHP ve Laravel ile kolayca kullanmak için bir paket geliştirmiştir. Bu paket; tekil ve toplu SMS gönderimi, raporlama ve OTP doğrulama süreçlerini birkaç satır kodla projeye entegre etmeyi sağlar.",
+    "source": "github.com/bahricanli/netgsm-php"
+}

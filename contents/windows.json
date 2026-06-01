@@ -1,6 +1,6 @@
 {
     "status": true,
-    "title":"Windows",
-    "content": "Dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır. 1960'larda Lorem Ipsum pasajları da içeren Letraset yapraklarının yayınlanması ile ve yakın zamanda Aldus PageMaker gibi Lorem Ipsum sürümleri içeren masaüstü yayıncılık yazılımları ile popüler olmuştur",
-    "source":"lipsum.com"
+    "title": "Microsoft Windows",
+    "content": "Microsoft Windows, 1985'te piyasaya sürülen ve küresel masaüstü işletim sistemi pazarının %70'inden fazlasını elinde bulunduran işletim sistemidir. Windows 11 ile modern bir arayüze kavuşan platform; WSL (Windows Subsystem for Linux) ile Linux araçlarını Windows üzerinde çalıştırma imkânı tanımakta, DirectX ve .NET ekosistemiyle oyun ve kurumsal yazılım geliştirme için güçlü bir platform sunmaktadır.",
+    "source": "microsoft.com"
 }

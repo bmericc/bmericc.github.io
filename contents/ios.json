@@ -1,0 +1,6 @@
+{
+    "status": true,
+    "title": "iOS Geliştirme",
+    "content": "iOS, Apple'ın iPhone ve iPad cihazları için geliştirdiği mobil işletim sistemidir. Bahri, Objective-C kullanarak iOS platformunda internet radyosu oynatıcısı geliştirmiştir: <em>Radio</em> projesi, Icecast tabanlı internet radyo istasyonlarını iOS'ta oynatmaya yarayan açık kaynaklı bir wrapper kütüphanesidir. Kendi işlettiği internet radyosu projesinin iOS istemcisini bu şekilde hayata geçirmiştir.",
+    "source": "github.com/bahricanli"
+}

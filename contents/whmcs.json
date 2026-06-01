@@ -1,0 +1,6 @@
+{
+    "status": true,
+    "title": "WHMCS",
+    "content": "WHMCS (Web Host Manager Complete Solution), hosting şirketleri için geliştirilmiş kapsamlı faturalama, destek ve otomasyon platformudur. Domain kayıt, hosting satışı, otomatik provizyon ve müşteri yönetimini tek çatı altında toplayan WHMCS; Bahri'nin kendi hosting şirketi Kale Host bünyesindeki altyapıda aktif olarak kullanılmaktadır. Bahri ayrıca prj.be domain kayıt entegrasyonu için özel bir WHMCS modülü geliştirmiştir.",
+    "source": "github.com/bahricanli/whmcs-prjberegistrar"
+}

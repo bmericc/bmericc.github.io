@@ -1,0 +1,6 @@
+{
+    "status": true,
+    "title": "GSM / Modem Entegrasyonu",
+    "content": "Bahri, GSM ve modem donanımları üzerine çeşitli projeler geliştirmiştir. En dikkat çekici olanı, ESP8266 Wi-Fi modülünü Ai-Thinker A7 GSM/GPRS modülüyle haberleştiren C++ kütüphanesidir (10+ GitHub yıldızı). Ayrıca 3G modem aracılığıyla SMS gönderip almaya yarayan Python aracı, Huawei modem entegrasyonu ve Asterisk üzerinde USB GSM dongle kullanımını sağlayan asterisk-chan-dongle projelerinde de katkıları bulunmaktadır.",
+    "source": "github.com/bmericc/AiThinker_A7"
+}
