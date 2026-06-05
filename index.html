@@ -9,14 +9,14 @@
   <link rel="icon" href="/favicon.ico">
   <style>
     :root {
-      --bg: #0f1117;
-      --bg2: #1a1d27;
-      --bg3: #252836;
-      --border: #2e3147;
-      --text: #e2e8f0;
-      --text-dim: #8892a4;
-      --accent: #6366f1;
-      --accent2: #818cf8;
+      --bg: #ffffff;
+      --bg2: #f5f5f5;
+      --bg3: #ebebeb;
+      --border: #d0d0d0;
+      --text: #111111;
+      --text-dim: #555555;
+      --accent: #111111;
+      --accent2: #444444;
       --sidebar-w: 260px;
       --header-h: 56px;
       --radius: 10px;
@@ -222,15 +222,15 @@
     .tag:hover { opacity: .85; transform: translateY(-1px); }
     .tag:active { transform: scale(.97); }
 
-    .tag-identity  { background: #1e293b; color: #94a3b8; border-color: #334155; }
-    .tag-code      { background: #1a1f3a; color: #818cf8; border-color: #312e81; }
-    .tag-db        { background: #1a2e1a; color: #4ade80; border-color: #166534; }
-    .tag-server    { background: #1e1a2e; color: #c084fc; border-color: #6b21a8; }
-    .tag-iot       { background: #2e1a1a; color: #f87171; border-color: #991b1b; }
-    .tag-api       { background: #1a2a2e; color: #22d3ee; border-color: #0e7490; }
-    .tag-design    { background: #2e1a24; color: #f472b6; border-color: #9d174d; }
-    .tag-office    { background: #1e2a2e; color: #67e8f9; border-color: #155e75; }
-    .tag-os        { background: #2e2a1a; color: #fbbf24; border-color: #92400e; }
+    .tag-identity  { background: #f0f0f0; color: #333; border-color: #ccc; }
+    .tag-code      { background: #f0f0f0; color: #333; border-color: #ccc; }
+    .tag-db        { background: #f0f0f0; color: #333; border-color: #ccc; }
+    .tag-server    { background: #f0f0f0; color: #333; border-color: #ccc; }
+    .tag-iot       { background: #f0f0f0; color: #333; border-color: #ccc; }
+    .tag-api       { background: #f0f0f0; color: #333; border-color: #ccc; }
+    .tag-design    { background: #f0f0f0; color: #333; border-color: #ccc; }
+    .tag-office    { background: #f0f0f0; color: #333; border-color: #ccc; }
+    .tag-os        { background: #f0f0f0; color: #333; border-color: #ccc; }
 
     /* ── CV ── */
     .cv-text {
@@ -295,9 +295,9 @@
       font-weight: 600;
       padding: 2px 8px;
       border-radius: 20px;
-      background: #1e3a2e;
-      color: #4ade80;
-      border: 1px solid #166534;
+      background: #e8f5e9;
+      color: #2e7d32;
+      border: 1px solid #c8e6c9;
     }
     .cv-duration {
       font-size: 11px;
@@ -353,8 +353,8 @@
 
     /* ── Payment ── */
     .bank-card {
-      background: #f8f9fc;
-      border: 1px solid #e2e6ef;
+      background: var(--bg2);
+      border: 1px solid var(--border);
       border-radius: var(--radius);
       padding: 20px;
       margin-bottom: 14px;
@@ -364,15 +364,15 @@
     }
     .bank-logo-wrap { display: block; margin-bottom: 4px; }
     .bank-logo { height: 44px; object-fit: contain; object-position: left; display: block; }
-    .bank-name { font-weight: 600; font-size: 14px; color: #1a1a2e; }
-    .bank-row { font-size: 13px; color: #666; display: flex; gap: 8px; }
+    .bank-name { font-weight: 600; font-size: 14px; color: var(--text); }
+    .bank-row { font-size: 13px; color: var(--text-dim); display: flex; gap: 8px; }
     .bank-label { color: #999; min-width: 60px; }
-    .bank-value { color: #1a1a2e; font-family: monospace; font-size: 13px; }
+    .bank-value { color: var(--text); font-family: monospace; font-size: 13px; }
     .copy-iban {
       align-self: flex-start;
-      background: #e8eaf6;
-      border: 1px solid #c5cae9;
-      color: #3949ab;
+      background: var(--bg3);
+      border: 1px solid var(--border);
+      color: var(--text);
       font-size: 12px;
       padding: 4px 10px;
       border-radius: 6px;
@@ -380,7 +380,7 @@
       transition: background var(--transition);
     }
     .copy-iban:hover { background: var(--accent); border-color: var(--accent); color: #fff; }
-    .copied { background: #c8e6c9 !important; border-color: #4caf50 !important; color: #1b5e20 !important; }
+    .copied { background: #d4edda !important; border-color: #aaa !important; color: #155724 !important; }
 
     /* ── Contact ── */
     .contact-info { margin-bottom: 28px; }
@@ -433,8 +433,8 @@
       margin-bottom: 16px;
       font-size: 14px;
     }
-    #form-alert.success { background: #14532d; color: #4ade80; border: 1px solid #166534; }
-    #form-alert.error   { background: #450a0a; color: #f87171; border: 1px solid #991b1b; }
+    #form-alert.success { background: #d4edda; color: #155724; border: 1px solid #c3e6cb; }
+    #form-alert.error   { background: #f8d7da; color: #721c24; border: 1px solid #f5c6cb; }
 
 
     /* ── CA ── */
