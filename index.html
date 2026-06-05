@@ -17,6 +17,11 @@
       --text-dim: #555555;
       --accent: #111111;
       --accent2: #444444;
+      --dark-bg: #111111;
+      --dark-bg2: #222222;
+      --dark-border: #333333;
+      --dark-text: #eeeeee;
+      --dark-text-dim: #999999;
       --sidebar-w: 260px;
       --header-h: 56px;
       --radius: 10px;
@@ -43,8 +48,8 @@
       position: fixed;
       top: 0; left: 0; bottom: 0;
       width: var(--sidebar-w);
-      background: var(--bg2);
-      border-right: 1px solid var(--border);
+      background: var(--dark-bg);
+      border-right: 1px solid var(--dark-border);
       display: flex;
       flex-direction: column;
       z-index: 100;
@@ -56,7 +61,7 @@
 
     .sidebar-logo {
       padding: 24px 20px 16px;
-      border-bottom: 1px solid var(--border);
+      border-bottom: 1px solid var(--dark-border);
     }
     .sidebar-logo img { max-width: 140px; display: block; }
 
@@ -67,7 +72,7 @@
       align-items: center;
       gap: 12px;
       padding: 11px 20px;
-      color: var(--text-dim);
+      color: var(--dark-text-dim);
       text-decoration: none;
       font-size: 14px;
       font-weight: 500;
@@ -75,23 +80,23 @@
       cursor: pointer;
     }
     nav a:hover, nav a.active {
-      background: var(--bg3);
-      color: var(--text);
+      background: var(--dark-bg2);
+      color: var(--dark-text);
     }
     nav a svg { flex-shrink: 0; opacity: .7; }
     nav a.active svg { opacity: 1; }
-    nav a.active { border-left: 3px solid var(--accent); }
+    nav a.active { border-left: 3px solid var(--dark-text); }
 
     .privacy-link {
       padding: 16px 20px;
-      border-top: 1px solid var(--border);
+      border-top: 1px solid var(--dark-border);
     }
     .privacy-link a {
       font-size: 12px;
-      color: var(--text-dim);
+      color: var(--dark-text-dim);
       text-decoration: none;
     }
-    .privacy-link a:hover { color: var(--text); }
+    .privacy-link a:hover { color: var(--dark-text); }
 
     /* ── Overlay ── */
     #overlay {
@@ -115,8 +120,8 @@
     /* ── Header ── */
     #header {
       height: var(--header-h);
-      background: var(--bg2);
-      border-bottom: 1px solid var(--border);
+      background: var(--dark-bg);
+      border-bottom: 1px solid var(--dark-border);
       display: flex;
       align-items: center;
       padding: 0 16px;
@@ -131,30 +136,31 @@
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
+      color: var(--dark-text);
     }
     #back-btn {
       background: none;
       border: none;
-      color: var(--text-dim);
+      color: var(--dark-text-dim);
       cursor: pointer;
       padding: 6px;
       border-radius: 6px;
       display: none;
       align-items: center;
     }
-    #back-btn:hover { background: var(--bg3); color: var(--text); }
+    #back-btn:hover { background: var(--dark-bg2); color: var(--dark-text); }
     #back-btn.show { display: flex; }
 
     #menu-btn {
       background: none;
       border: none;
-      color: var(--text);
+      color: var(--dark-text);
       cursor: pointer;
       padding: 6px;
       border-radius: 6px;
       flex-shrink: 0;
     }
-    #menu-btn:hover { background: var(--bg3); }
+    #menu-btn:hover { background: var(--dark-bg2); }
 
     /* ── Pages ── */
     #content {
