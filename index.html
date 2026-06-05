@@ -890,6 +890,7 @@
         <div class="page-inner">
           <div class="contact-info">
             <h3 style="margin-bottom:16px;">İletişim Bilgileri</h3>
+            <button class="btn" onclick="addToContacts()" style="margin-bottom:20px;width:100%;">📱 Rehbere Ekle</button>
             <div class="contact-row">
               <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
               <div>Bahri Meriç Canlı<br>PK 10 Ulus, 06040<br>Ankara, Turkey</div>
@@ -1152,6 +1153,23 @@ function sendContact(e) {
 if (window.location.hostname !== 'localhost' && window.location.protocol !== 'https:') {
   window.location.replace('https:' + window.location.href.slice(window.location.protocol.length));
 }
+
+  function addToContacts() {
+    const data = {
+      name: "Bahri Meriç Canlı",
+      phone: "+90 5053127807",
+      email: "bahri@bahri.info",
+      website: "https://www.bahri.info",
+      organization: "Bahri Canlı"
+    };
+    if (window.webkit?.messageHandlers?.addContact) {
+      window.webkit.messageHandlers.addContact.postMessage(data);
+    } else if (window.Android?.addContact) {
+      window.Android.addContact(JSON.stringify(data));
+    } else {
+      window.open('https://www.bahri.info');
+    }
+  }
 </script>
 
 </body>
