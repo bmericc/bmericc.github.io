@@ -1193,17 +1193,25 @@ if (window.location.hostname !== 'localhost' && window.location.protocol !== 'ht
   // Blog
   function loadBlog() {
     const el = document.getElementById('blog-list');
-    fetch('https://www.bahri.info/blog/feed.json')
-      .then(r => r.json())
-      .then(data => {
-        const posts = data.items || [];
-        if (!posts.length) { el.innerHTML = '<p>Henüz yazı yok.</p>'; return; }
-        el.innerHTML = posts.slice(0, 10).map(p => `
+    fetch('https://www.bahri.info/blog/feed')
+      .then(r => r.text())
+      .then(text => {
+        const xml = new DOMParser().parseFromString(text, 'text/xml');
+        const items = Array.from(xml.querySelectorAll('item'));
+        if (!items.length) { el.innerHTML = '<p>Henüz yazı yok.</p>'; return; }
+        el.innerHTML = items.slice(0, 10).map(item => {
+          const title = item.querySelector('title')?.textContent || '';
+          const link  = item.querySelector('link')?.textContent || '';
+          const date  = item.querySelector('pubDate')?.textContent || '';
+          const desc  = item.querySelector('description')?.textContent || '';
+          const dateStr = date ? new Date(date).toLocaleDateString('tr-TR') : '';
+          return `
           <div style="border-bottom:1px solid var(--border);padding:14px 0;">
-            <a href="${p.url}" style="font-weight:500;color:var(--text);text-decoration:none;">${p.title}</a>
-            ${p.date_published ? `<div style="font-size:12px;color:var(--text-muted);margin-top:4px;">${new Date(p.date_published).toLocaleDateString('tr-TR')}</div>` : ''}
-            ${p.summary ? `<div style="font-size:13px;margin-top:6px;">${p.summary}</div>` : ''}
-          </div>`).join('');
+            <a href="${link}" style="font-weight:500;color:var(--text);text-decoration:none;">${title}</a>
+            ${dateStr ? `<div style="font-size:12px;color:var(--text-muted);margin-top:4px;">${dateStr}</div>` : ''}
+            ${desc ? `<div style="font-size:13px;margin-top:6px;">${desc.replace(/<[^>]*>/g,'').slice(0,120)}…</div>` : ''}
+          </div>`;
+        }).join('');
       })
       .catch(() => {
         el.innerHTML = `<a href="https://www.bahri.info/blog" style="display:block;text-align:center;padding:20px;color:var(--accent2);">Blog'u Aç →</a>`;
